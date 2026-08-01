@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="576" viewBox="0 0 1024 576">
-<defs><linearGradient id="sea" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#AEE8FF"/><stop offset="1" stop-color="#33B6FF"/></linearGradient></defs>
-<rect width="1024" height="576" fill="url(#sea)"/><circle cx="820" cy="90" r="48" fill="#FFC83D"/>
-<path d="M0 450 C160 420 260 480 420 440 C600 400 740 485 1024 430 L1024 576 L0 576Z" fill="#FFE3A3"/>
-<text x="70" y="145" font-family="Arial, sans-serif" font-size="56" fill="#0B1D3A" font-weight="800">Starter Sea Adventure</text>
-<text x="73" y="205" font-family="Arial, sans-serif" font-size="30" fill="#0B1D3A">Original Czech-English starter vocabulary template</text>
-<text x="760" y="390" font-family="Arial, sans-serif" font-size="110">🦜</text></svg>

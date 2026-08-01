@@ -1,4 +1,4 @@
-name: Validate library repository
+﻿name: Validate library repository
 
 on:
   pull_request:
@@ -45,3 +45,6 @@ jobs:
 
       - name: Check catalog is current
         run: node scripts/generate-library-catalog.mjs --check
+
+      - name: Run pipeline tests
+        run: npm test

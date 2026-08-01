@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "lexiquest-libs",
   "version": "1.0.0",
   "description": "Published ZIP library packages for LexiQuest.",
@@ -7,7 +7,8 @@
     "library:validate": "node scripts/validate-library-package.mjs libraries/*.zip",
     "library:catalog": "node scripts/generate-library-catalog.mjs --write",
     "library:catalog:check": "node scripts/generate-library-catalog.mjs --check",
-    "library:check": "npm run library:validate && npm run library:catalog:check"
+    "library:check": "npm run library:validate && npm run library:catalog:check && npm test",
+    "test": "node scripts/test-library-pipeline.mjs"
   },
   "repository": {
     "type": "git",
