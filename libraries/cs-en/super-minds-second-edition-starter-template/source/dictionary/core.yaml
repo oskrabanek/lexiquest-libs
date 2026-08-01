@@ -1,0 +1,774 @@
+formatVersion: 1
+id: dictionary-core
+title:
+  en: "Core starter vocabulary"
+  cs: "Základní starter slovní zásoba"
+entries:
+  - id: word-hello
+    type: word
+    category: greeting
+    terms:
+      en: "hello"
+      cs: "ahoj"
+    tts:
+      en: "hello"
+      cs: "ahoj"
+    image: assets/images/vocabulary/hello.svg
+    tags:
+      - greeting
+  - id: word-goodbye
+    type: word
+    category: greeting
+    terms:
+      en: "goodbye"
+      cs: "ahoj při odchodu"
+    tts:
+      en: "goodbye"
+      cs: "ahoj při odchodu"
+    image: assets/images/vocabulary/goodbye.svg
+    tags:
+      - greeting
+  - id: word-teacher
+    type: word
+    category: people
+    terms:
+      en: "teacher"
+      cs: "učitel/učitelka"
+    tts:
+      en: "teacher"
+      cs: "učitel"
+    image: assets/images/vocabulary/teacher.svg
+    tags:
+      - people
+  - id: word-friend
+    type: word
+    category: people
+    terms:
+      en: "friend"
+      cs: "kamarád/kamarádka"
+    tts:
+      en: "friend"
+      cs: "kamarád"
+    image: assets/images/vocabulary/friend.svg
+    tags:
+      - people
+  - id: word-boy
+    type: word
+    category: people
+    terms:
+      en: "boy"
+      cs: "chlapec"
+    tts:
+      en: "boy"
+      cs: "chlapec"
+    image: assets/images/vocabulary/boy.svg
+    tags:
+      - people
+  - id: word-girl
+    type: word
+    category: people
+    terms:
+      en: "girl"
+      cs: "dívka"
+    tts:
+      en: "girl"
+      cs: "dívka"
+    image: assets/images/vocabulary/girl.svg
+    tags:
+      - people
+  - id: word-name
+    type: word
+    category: people
+    terms:
+      en: "name"
+      cs: "jméno"
+    tts:
+      en: "name"
+      cs: "jméno"
+    image: assets/images/vocabulary/name.svg
+    tags:
+      - people
+  - id: word-yes
+    type: word
+    category: phrases
+    terms:
+      en: "yes"
+      cs: "ano"
+    tts:
+      en: "yes"
+      cs: "ano"
+    image: assets/images/vocabulary/yes.svg
+    tags:
+      - phrases
+  - id: word-no
+    type: word
+    category: phrases
+    terms:
+      en: "no"
+      cs: "ne"
+    tts:
+      en: "no"
+      cs: "ne"
+    image: assets/images/vocabulary/no.svg
+    tags:
+      - phrases
+  - id: word-red
+    type: word
+    category: colors
+    terms:
+      en: "red"
+      cs: "červená"
+    tts:
+      en: "red"
+      cs: "červená"
+    image: assets/images/vocabulary/red.svg
+    tags:
+      - colors
+  - id: word-blue
+    type: word
+    category: colors
+    terms:
+      en: "blue"
+      cs: "modrá"
+    tts:
+      en: "blue"
+      cs: "modrá"
+    image: assets/images/vocabulary/blue.svg
+    tags:
+      - colors
+  - id: word-yellow
+    type: word
+    category: colors
+    terms:
+      en: "yellow"
+      cs: "žlutá"
+    tts:
+      en: "yellow"
+      cs: "žlutá"
+    image: assets/images/vocabulary/yellow.svg
+    tags:
+      - colors
+  - id: word-green
+    type: word
+    category: colors
+    terms:
+      en: "green"
+      cs: "zelená"
+    tts:
+      en: "green"
+      cs: "zelená"
+    image: assets/images/vocabulary/green.svg
+    tags:
+      - colors
+  - id: word-black
+    type: word
+    category: colors
+    terms:
+      en: "black"
+      cs: "černá"
+    tts:
+      en: "black"
+      cs: "černá"
+    image: assets/images/vocabulary/black.svg
+    tags:
+      - colors
+  - id: word-white
+    type: word
+    category: colors
+    terms:
+      en: "white"
+      cs: "bílá"
+    tts:
+      en: "white"
+      cs: "bílá"
+    image: assets/images/vocabulary/white.svg
+    tags:
+      - colors
+  - id: word-one
+    type: word
+    category: numbers
+    terms:
+      en: "one"
+      cs: "jedna"
+    tts:
+      en: "one"
+      cs: "jedna"
+    image: assets/images/vocabulary/one.svg
+    tags:
+      - numbers
+  - id: word-two
+    type: word
+    category: numbers
+    terms:
+      en: "two"
+      cs: "dvě"
+    tts:
+      en: "two"
+      cs: "dvě"
+    image: assets/images/vocabulary/two.svg
+    tags:
+      - numbers
+  - id: word-three
+    type: word
+    category: numbers
+    terms:
+      en: "three"
+      cs: "tři"
+    tts:
+      en: "three"
+      cs: "tři"
+    image: assets/images/vocabulary/three.svg
+    tags:
+      - numbers
+  - id: word-four
+    type: word
+    category: numbers
+    terms:
+      en: "four"
+      cs: "čtyři"
+    tts:
+      en: "four"
+      cs: "čtyři"
+    image: assets/images/vocabulary/four.svg
+    tags:
+      - numbers
+  - id: word-five
+    type: word
+    category: numbers
+    terms:
+      en: "five"
+      cs: "pět"
+    tts:
+      en: "five"
+      cs: "pět"
+    image: assets/images/vocabulary/five.svg
+    tags:
+      - numbers
+  - id: word-book
+    type: word
+    category: school
+    terms:
+      en: "book"
+      cs: "kniha"
+    tts:
+      en: "book"
+      cs: "kniha"
+    image: assets/images/vocabulary/book.svg
+    tags:
+      - school
+  - id: word-pen
+    type: word
+    category: school
+    terms:
+      en: "pen"
+      cs: "pero"
+    tts:
+      en: "pen"
+      cs: "pero"
+    image: assets/images/vocabulary/pen.svg
+    tags:
+      - school
+  - id: word-pencil
+    type: word
+    category: school
+    terms:
+      en: "pencil"
+      cs: "tužka"
+    tts:
+      en: "pencil"
+      cs: "tužka"
+    image: assets/images/vocabulary/pencil.svg
+    tags:
+      - school
+  - id: word-bag
+    type: word
+    category: school
+    terms:
+      en: "bag"
+      cs: "taška"
+    tts:
+      en: "bag"
+      cs: "taška"
+    image: assets/images/vocabulary/bag.svg
+    tags:
+      - school
+  - id: word-desk
+    type: word
+    category: school
+    terms:
+      en: "desk"
+      cs: "lavice"
+    tts:
+      en: "desk"
+      cs: "lavice"
+    image: assets/images/vocabulary/desk.svg
+    tags:
+      - school
+  - id: word-chair
+    type: word
+    category: school
+    terms:
+      en: "chair"
+      cs: "židle"
+    tts:
+      en: "chair"
+      cs: "židle"
+    image: assets/images/vocabulary/chair.svg
+    tags:
+      - school
+  - id: word-ruler
+    type: word
+    category: school
+    terms:
+      en: "ruler"
+      cs: "pravítko"
+    tts:
+      en: "ruler"
+      cs: "pravítko"
+    image: assets/images/vocabulary/ruler.svg
+    tags:
+      - school
+  - id: word-rubber
+    type: word
+    category: school
+    terms:
+      en: "rubber"
+      cs: "guma"
+    tts:
+      en: "rubber"
+      cs: "guma"
+    image: assets/images/vocabulary/rubber.svg
+    tags:
+      - school
+  - id: word-ball
+    type: word
+    category: toys
+    terms:
+      en: "ball"
+      cs: "míč"
+    tts:
+      en: "ball"
+      cs: "míč"
+    image: assets/images/vocabulary/ball.svg
+    tags:
+      - toys
+  - id: word-doll
+    type: word
+    category: toys
+    terms:
+      en: "doll"
+      cs: "panenka"
+    tts:
+      en: "doll"
+      cs: "panenka"
+    image: assets/images/vocabulary/doll.svg
+    tags:
+      - toys
+  - id: word-car
+    type: word
+    category: toys
+    terms:
+      en: "car"
+      cs: "auto"
+    tts:
+      en: "car"
+      cs: "auto"
+    image: assets/images/vocabulary/car.svg
+    tags:
+      - toys
+  - id: word-train
+    type: word
+    category: toys
+    terms:
+      en: "train"
+      cs: "vlak"
+    tts:
+      en: "train"
+      cs: "vlak"
+    image: assets/images/vocabulary/train.svg
+    tags:
+      - toys
+  - id: word-bike
+    type: word
+    category: toys
+    terms:
+      en: "bike"
+      cs: "kolo"
+    tts:
+      en: "bike"
+      cs: "kolo"
+    image: assets/images/vocabulary/bike.svg
+    tags:
+      - toys
+  - id: word-kite
+    type: word
+    category: toys
+    terms:
+      en: "kite"
+      cs: "drak"
+    tts:
+      en: "kite"
+      cs: "drak"
+    image: assets/images/vocabulary/kite.svg
+    tags:
+      - toys
+  - id: word-robot
+    type: word
+    category: toys
+    terms:
+      en: "robot"
+      cs: "robot"
+    tts:
+      en: "robot"
+      cs: "robot"
+    image: assets/images/vocabulary/robot.svg
+    tags:
+      - toys
+  - id: word-mum
+    type: word
+    category: family
+    terms:
+      en: "mum"
+      cs: "maminka"
+    tts:
+      en: "mum"
+      cs: "maminka"
+    image: assets/images/vocabulary/mum.svg
+    tags:
+      - family
+  - id: word-dad
+    type: word
+    category: family
+    terms:
+      en: "dad"
+      cs: "tatínek"
+    tts:
+      en: "dad"
+      cs: "tatínek"
+    image: assets/images/vocabulary/dad.svg
+    tags:
+      - family
+  - id: word-sister
+    type: word
+    category: family
+    terms:
+      en: "sister"
+      cs: "sestra"
+    tts:
+      en: "sister"
+      cs: "sestra"
+    image: assets/images/vocabulary/sister.svg
+    tags:
+      - family
+  - id: word-brother
+    type: word
+    category: family
+    terms:
+      en: "brother"
+      cs: "bratr"
+    tts:
+      en: "brother"
+      cs: "bratr"
+    image: assets/images/vocabulary/brother.svg
+    tags:
+      - family
+  - id: word-grandma
+    type: word
+    category: family
+    terms:
+      en: "grandma"
+      cs: "babička"
+    tts:
+      en: "grandma"
+      cs: "babička"
+    image: assets/images/vocabulary/grandma.svg
+    tags:
+      - family
+  - id: word-grandpa
+    type: word
+    category: family
+    terms:
+      en: "grandpa"
+      cs: "dědeček"
+    tts:
+      en: "grandpa"
+      cs: "dědeček"
+    image: assets/images/vocabulary/grandpa.svg
+    tags:
+      - family
+  - id: word-baby
+    type: word
+    category: family
+    terms:
+      en: "baby"
+      cs: "miminko"
+    tts:
+      en: "baby"
+      cs: "miminko"
+    image: assets/images/vocabulary/baby.svg
+    tags:
+      - family
+  - id: word-cat
+    type: word
+    category: animals
+    terms:
+      en: "cat"
+      cs: "kočka"
+    tts:
+      en: "cat"
+      cs: "kočka"
+    image: assets/images/vocabulary/cat.svg
+    tags:
+      - animals
+  - id: word-dog
+    type: word
+    category: animals
+    terms:
+      en: "dog"
+      cs: "pes"
+    tts:
+      en: "dog"
+      cs: "pes"
+    image: assets/images/vocabulary/dog.svg
+    tags:
+      - animals
+  - id: word-bird
+    type: word
+    category: animals
+    terms:
+      en: "bird"
+      cs: "pták"
+    tts:
+      en: "bird"
+      cs: "pták"
+    image: assets/images/vocabulary/bird.svg
+    tags:
+      - animals
+  - id: word-fish
+    type: word
+    category: animals
+    terms:
+      en: "fish"
+      cs: "ryba"
+    tts:
+      en: "fish"
+      cs: "ryba"
+    image: assets/images/vocabulary/fish.svg
+    tags:
+      - animals
+  - id: word-rabbit
+    type: word
+    category: animals
+    terms:
+      en: "rabbit"
+      cs: "králík"
+    tts:
+      en: "rabbit"
+      cs: "králík"
+    image: assets/images/vocabulary/rabbit.svg
+    tags:
+      - animals
+  - id: word-turtle
+    type: word
+    category: animals
+    terms:
+      en: "turtle"
+      cs: "želva"
+    tts:
+      en: "turtle"
+      cs: "želva"
+    image: assets/images/vocabulary/turtle.svg
+    tags:
+      - animals
+  - id: word-head
+    type: word
+    category: body
+    terms:
+      en: "head"
+      cs: "hlava"
+    tts:
+      en: "head"
+      cs: "hlava"
+    image: assets/images/vocabulary/head.svg
+    tags:
+      - body
+  - id: word-hand
+    type: word
+    category: body
+    terms:
+      en: "hand"
+      cs: "ruka"
+    tts:
+      en: "hand"
+      cs: "ruka"
+    image: assets/images/vocabulary/hand.svg
+    tags:
+      - body
+  - id: word-eye
+    type: word
+    category: body
+    terms:
+      en: "eye"
+      cs: "oko"
+    tts:
+      en: "eye"
+      cs: "oko"
+    image: assets/images/vocabulary/eye.svg
+    tags:
+      - body
+  - id: word-mouth
+    type: word
+    category: body
+    terms:
+      en: "mouth"
+      cs: "ústa"
+    tts:
+      en: "mouth"
+      cs: "ústa"
+    image: assets/images/vocabulary/mouth.svg
+    tags:
+      - body
+  - id: word-run
+    type: word
+    category: actions
+    terms:
+      en: "run"
+      cs: "běhat"
+    tts:
+      en: "run"
+      cs: "běhat"
+    image: assets/images/vocabulary/run.svg
+    tags:
+      - actions
+  - id: word-jump
+    type: word
+    category: actions
+    terms:
+      en: "jump"
+      cs: "skákat"
+    tts:
+      en: "jump"
+      cs: "skákat"
+    image: assets/images/vocabulary/jump.svg
+    tags:
+      - actions
+  - id: word-sing
+    type: word
+    category: actions
+    terms:
+      en: "sing"
+      cs: "zpívat"
+    tts:
+      en: "sing"
+      cs: "zpívat"
+    image: assets/images/vocabulary/sing.svg
+    tags:
+      - actions
+  - id: word-dance
+    type: word
+    category: actions
+    terms:
+      en: "dance"
+      cs: "tancovat"
+    tts:
+      en: "dance"
+      cs: "tancovat"
+    image: assets/images/vocabulary/dance.svg
+    tags:
+      - actions
+  - id: word-apple
+    type: word
+    category: food
+    terms:
+      en: "apple"
+      cs: "jablko"
+    tts:
+      en: "apple"
+      cs: "jablko"
+    image: assets/images/vocabulary/apple.svg
+    tags:
+      - food
+  - id: word-banana
+    type: word
+    category: food
+    terms:
+      en: "banana"
+      cs: "banán"
+    tts:
+      en: "banana"
+      cs: "banán"
+    image: assets/images/vocabulary/banana.svg
+    tags:
+      - food
+  - id: word-milk
+    type: word
+    category: food
+    terms:
+      en: "milk"
+      cs: "mléko"
+    tts:
+      en: "milk"
+      cs: "mléko"
+    image: assets/images/vocabulary/milk.svg
+    tags:
+      - food
+  - id: word-water
+    type: word
+    category: food
+    terms:
+      en: "water"
+      cs: "voda"
+    tts:
+      en: "water"
+      cs: "voda"
+    image: assets/images/vocabulary/water.svg
+    tags:
+      - food
+  - id: word-cake
+    type: word
+    category: food
+    terms:
+      en: "cake"
+      cs: "dort"
+    tts:
+      en: "cake"
+      cs: "dort"
+    image: assets/images/vocabulary/cake.svg
+    tags:
+      - food
+  - id: word-happy
+    type: word
+    category: feelings
+    terms:
+      en: "happy"
+      cs: "šťastný"
+    tts:
+      en: "happy"
+      cs: "šťastný"
+    image: assets/images/vocabulary/happy.svg
+    tags:
+      - feelings
+  - id: word-sad
+    type: word
+    category: feelings
+    terms:
+      en: "sad"
+      cs: "smutný"
+    tts:
+      en: "sad"
+      cs: "smutný"
+    image: assets/images/vocabulary/sad.svg
+    tags:
+      - feelings
+  - id: word-hungry
+    type: word
+    category: feelings
+    terms:
+      en: "hungry"
+      cs: "hladový"
+    tts:
+      en: "hungry"
+      cs: "hladový"
+    image: assets/images/vocabulary/hungry.svg
+    tags:
+      - feelings

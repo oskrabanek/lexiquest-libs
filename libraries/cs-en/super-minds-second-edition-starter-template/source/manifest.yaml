@@ -1,0 +1,61 @@
+formatVersion: 1
+id: org.lexiquest.cs-en.super-minds-2-starter-template
+slug: super-minds-second-edition-starter-template
+version: 1.0.0
+name:
+  en: "Super Minds Second Edition Starter Level - Unofficial Template"
+  cs: "Super Minds Second Edition Starter Level - neoficiální šablona"
+description:
+  en: "Original Czech-English starter-level vocabulary adventure scaffold for LexiQuest. Organized for use next to Super Minds Second Edition Starter Level, but it does not copy Cambridge textbook text, official word lists, artwork, audio, or lesson wording."
+  cs: "Originální česko-anglická šablona starter slovní zásoby pro LexiQuest. Je připravená k použití vedle učebnice Super Minds Second Edition Starter Level, ale nekopíruje texty, slovní seznamy, grafiku, audio ani formulace z učebnice Cambridge."
+languages:
+  - cs
+  - en
+canonicalPair: cs-en
+defaultSourceLanguage: cs
+defaultTargetLanguage: en
+level: pre-A1
+audience:
+  minAge: 6
+  maxAge: 8
+source:
+  type: third-party-aligned-template
+  title: "Super Minds Second Edition Starter Level"
+  publisher: "Cambridge University Press & Assessment"
+  copyrightNotice: "This package is unofficial and contains only original LexiQuest-authored vocabulary and placeholders. Replace or extend it only with content you are licensed to use."
+license: CC-BY-4.0
+authors:
+  - "LexiQuest generated template"
+minimumAppVersion: 0.1.0
+tags:
+  - children
+  - pre-a1
+  - starter
+  - czech-english
+  - textbook-companion-template
+assets:
+  cover: assets/images/adventure/cover.svg
+dictionary:
+  - dictionary/core.yaml
+quests:
+  - lessons/quest-01-hello-explorer.yaml
+  - lessons/quest-02-colours-and-numbers.yaml
+  - lessons/quest-03-school-things.yaml
+  - lessons/quest-04-toys-and-play.yaml
+  - lessons/quest-05-my-family.yaml
+  - lessons/quest-06-pets-and-animals.yaml
+  - lessons/quest-07-body-and-actions.yaml
+  - lessons/quest-08-food-and-feelings.yaml
+specialReviews:
+  - id: review-weak-words
+    title:
+      en: "Rescue Raft"
+      cs: "Záchranný vor"
+    purpose: weak-words
+    challengeTypes: [word-to-word, listen-to-image, missing-letters]
+  - id: review-long-unpracticed
+    title:
+      en: "Message Bottle"
+      cs: "Láhev se zprávou"
+    purpose: long-unpracticed-words
+    challengeTypes: [mixed-review, listen-and-type]

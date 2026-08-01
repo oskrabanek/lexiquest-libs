@@ -1,0 +1,134 @@
+formatVersion: 1
+id: quest-03-school-things
+title:
+  en: "School Things"
+  cs: "Školní věci"
+order: 3
+description:
+  en: "Original starter practice set for school things."
+  cs: "Originální starter procvičování pro téma: Školní věci."
+vocabulary:
+  - word-book
+  - word-pen
+  - word-pencil
+  - word-bag
+  - word-desk
+  - word-chair
+  - word-ruler
+  - word-rubber
+challenges:
+  - id: quest-03-school-things-challenge-01
+    type: listen-to-image
+    title:
+      en: "Listen and Choose"
+      cs: "Poslechni a vyber"
+    questionCount: 6
+    vocabulary:
+      - word-book
+      - word-pen
+      - word-pencil
+      - word-bag
+      - word-desk
+      - word-chair
+    direction:
+      modes: [cs-to-en, en-to-cs]
+      default: cs-to-en
+    answerOptions:
+      count: 3
+      distractorStrategy: same-quest
+    rewards:
+      completion:
+        coins: configured-by-app
+        stars: configured-by-app
+    validation:
+      caseSensitive: false
+      ignoreDiacritics: app-setting
+      allowTypos: false
+  - id: quest-03-school-things-challenge-02
+    type: missing-letters
+    title:
+      en: "Complete the Word"
+      cs: "Doplň slovo"
+    questionCount: 6
+    vocabulary:
+      - word-book
+      - word-pen
+      - word-pencil
+      - word-bag
+      - word-desk
+      - word-chair
+    direction:
+      modes: [cs-to-en, en-to-cs]
+      default: cs-to-en
+    answerOptions:
+      count: 3
+      distractorStrategy: same-quest
+    rewards:
+      completion:
+        coins: configured-by-app
+        stars: configured-by-app
+    validation:
+      caseSensitive: false
+      ignoreDiacritics: app-setting
+      allowTypos: false
+  - id: quest-03-school-things-challenge-03
+    type: sentence-fill
+    title:
+      en: "Complete the Sentence"
+      cs: "Doplň větu"
+    questionCount: 6
+    vocabulary:
+      - word-book
+      - word-pen
+      - word-pencil
+      - word-bag
+      - word-desk
+      - word-chair
+    direction:
+      modes: [cs-to-en, en-to-cs]
+      default: cs-to-en
+    answerOptions:
+      count: 3
+      distractorStrategy: same-quest
+    rewards:
+      completion:
+        coins: configured-by-app
+        stars: configured-by-app
+    validation:
+      caseSensitive: false
+      ignoreDiacritics: app-setting
+      allowTypos: false
+    sentenceFrames:
+      - en: "This is a {answer}."
+        cs: "To je {answer}."
+      - en: "I can see a {answer}."
+        cs: "Vidím {answer}."
+  - id: quest-03-school-things-challenge-04
+    type: mixed-review
+    title:
+      en: "Quest Review"
+      cs: "Opakování questu"
+    questionCount: 8
+    vocabulary:
+      - word-book
+      - word-pen
+      - word-pencil
+      - word-bag
+      - word-desk
+      - word-chair
+      - word-ruler
+      - word-rubber
+    direction:
+      modes: [cs-to-en, en-to-cs]
+      default: cs-to-en
+    answerOptions:
+      count: 3
+      distractorStrategy: same-quest
+    rewards:
+      completion:
+        coins: configured-by-app
+        stars: configured-by-app
+    validation:
+      caseSensitive: false
+      ignoreDiacritics: app-setting
+      allowTypos: false

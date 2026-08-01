@@ -1,0 +1,125 @@
+formatVersion: 1
+id: quest-06-pets-and-animals
+title:
+  en: "Pets and Animals"
+  cs: "Mazlíčci a zvířata"
+order: 6
+description:
+  en: "Original starter practice set for pets and animals."
+  cs: "Originální starter procvičování pro téma: Mazlíčci a zvířata."
+vocabulary:
+  - word-cat
+  - word-dog
+  - word-bird
+  - word-fish
+  - word-rabbit
+  - word-turtle
+challenges:
+  - id: quest-06-pets-and-animals-challenge-01
+    type: listen-and-type
+    title:
+      en: "Listen and Type"
+      cs: "Poslechni a napiš"
+    questionCount: 6
+    vocabulary:
+      - word-cat
+      - word-dog
+      - word-bird
+      - word-fish
+      - word-rabbit
+      - word-turtle
+    direction:
+      modes: [cs-to-en, en-to-cs]
+      default: cs-to-en
+    answerOptions:
+      count: 3
+      distractorStrategy: same-quest
+    rewards:
+      completion:
+        coins: configured-by-app
+        stars: configured-by-app
+    validation:
+      caseSensitive: false
+      ignoreDiacritics: app-setting
+      allowTypos: false
+  - id: quest-06-pets-and-animals-challenge-02
+    type: word-to-image
+    title:
+      en: "Look and Choose"
+      cs: "Podívej se a vyber"
+    questionCount: 6
+    vocabulary:
+      - word-cat
+      - word-dog
+      - word-bird
+      - word-fish
+      - word-rabbit
+      - word-turtle
+    direction:
+      modes: [cs-to-en, en-to-cs]
+      default: cs-to-en
+    answerOptions:
+      count: 3
+      distractorStrategy: same-quest
+    rewards:
+      completion:
+        coins: configured-by-app
+        stars: configured-by-app
+    validation:
+      caseSensitive: false
+      ignoreDiacritics: app-setting
+      allowTypos: false
+  - id: quest-06-pets-and-animals-challenge-03
+    type: word-to-word
+    title:
+      en: "Translate Words"
+      cs: "Překládej slovíčka"
+    questionCount: 6
+    vocabulary:
+      - word-cat
+      - word-dog
+      - word-bird
+      - word-fish
+      - word-rabbit
+      - word-turtle
+    direction:
+      modes: [cs-to-en, en-to-cs]
+      default: cs-to-en
+    answerOptions:
+      count: 3
+      distractorStrategy: same-quest
+    rewards:
+      completion:
+        coins: configured-by-app
+        stars: configured-by-app
+    validation:
+      caseSensitive: false
+      ignoreDiacritics: app-setting
+      allowTypos: false
+  - id: quest-06-pets-and-animals-challenge-04
+    type: mixed-review
+    title:
+      en: "Quest Review"
+      cs: "Opakování questu"
+    questionCount: 6
+    vocabulary:
+      - word-cat
+      - word-dog
+      - word-bird
+      - word-fish
+      - word-rabbit
+      - word-turtle
+    direction:
+      modes: [cs-to-en, en-to-cs]
+      default: cs-to-en
+    answerOptions:
+      count: 3
+      distractorStrategy: same-quest
+    rewards:
+      completion:
+        coins: configured-by-app
+        stars: configured-by-app
+    validation:
+      caseSensitive: false
+      ignoreDiacritics: app-setting
+      allowTypos: false
