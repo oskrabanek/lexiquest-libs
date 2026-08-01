@@ -1,59 +1,115 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-06-15T17:13:30Z",
+  "generatedAt": "2026-08-01T16:11:34.626Z",
   "libraries": [
     {
-      "id": "org.lexiquest.cs-en.super-minds-2-starter-template",
+      "id": "org.lexiquest.cs-en.super-minds-2-starter-companion",
       "version": "1.0.0",
-      "name": "Super Minds Second Edition Starter Level - Unofficial Template",
-      "description": "Original Czech-English starter-level LexiQuest companion template. Does not include proprietary Cambridge textbook content.",
+      "formatVersion": 1,
+      "name": {
+        "en": "Super Minds Second Edition Starter – LexiQuest Companion",
+        "cs": "Super Minds Second Edition Starter – doprovodná výprava LexiQuest"
+      },
+      "description": {
+        "en": "Unofficial Czech-English topic-aligned companion Adventure for young learners using Super Minds Second Edition Starter Level. Contains original LexiQuest vocabulary and practice structure, not copied textbook pages or media.",
+        "cs": "Neoficiální česko-anglická doprovodná výprava pro děti používající Super Minds Second Edition Starter Level. Obsahuje původní slovní zásobu a strukturu procvičování LexiQuest, nikoli kopie stran ani médií z učebnice."
+      },
       "languages": [
         "cs",
         "en"
+      ],
+      "languagePair": "cs-en",
+      "difficulty": "beginner",
+      "targetAges": [
+        6,
+        9
+      ],
+      "authors": [
+        "LexiQuest"
+      ],
+      "license": "CC-BY-4.0",
+      "tags": [
+        "children",
+        "beginner",
+        "pre-a1",
+        "czech",
+        "english",
+        "textbook-companion",
+        "super-minds",
+        "starter",
+        "unofficial"
+      ],
+      "questCount": 8,
+      "senseCount": 128,
+      "challengeTypes": [
+        "listen-picture",
+        "missing-letters",
+        "picture-choice",
+        "picture-listen",
+        "picture-typing",
+        "voice",
+        "voice-transcription",
+        "word-typing"
+      ],
+      "hasImages": true,
+      "hasAudio": true,
+      "coverFallback": {
+        "letter": "S",
+        "colorHashSource": "Super Minds Second Edition Starter – LexiQuest Companion"
+      },
+      "size": 5443817,
+      "downloadUrl": "libraries/cs-en/super-minds-2-starter-companion/releases/1.0.0/library.zip",
+      "sha256": "f8e573d1962cbda16ee8fb032d7a510fbfe77b8187934495451b075430cfee35",
+      "minimumAppVersion": "0.1.0",
+      "updatedAt": "2026-08-01T15:17:05.001Z"
+    },
+    {
+      "id": "org.lexiquest.cs-en.super-minds-2-starter-template",
+      "version": "1.0.0",
+      "formatVersion": 1,
+      "name": {
+        "en": "Super Minds Second Edition Starter Level - Unofficial Template",
+        "cs": "Super Minds Second Edition Starter Level - neoficiální šablona"
+      },
+      "description": {
+        "en": "Original Czech-English starter-level vocabulary adventure scaffold for LexiQuest. Organized for use next to Super Minds Second Edition Starter Level, but it does not copy Cambridge textbook text, official word lists, artwork, audio, or lesson wording.",
+        "cs": "Originální česko-anglická šablona starter slovní zásoby pro LexiQuest. Je připravená k použití vedle učebnice Super Minds Second Edition Starter Level, ale nekopíruje texty, slovní seznamy, grafiku, audio ani formulace z učebnice Cambridge."
+      },
+      "languages": [
+        "cs",
+        "en"
+      ],
+      "languagePair": "cs-en",
+      "difficulty": "pre-A1",
+      "targetAges": [
+        6,
+        8
       ],
       "authors": [
         "LexiQuest generated template"
       ],
       "license": "CC-BY-4.0",
-      "size": 37039,
-      "downloadUrl": "libraries/cs-en/super-minds-second-edition-starter-template/releases/1.0.0/library.zip",
-      "sha256": "7f3ed25def0d3cce752fb700f0631a4c1e3b7d77fc4c208bb99234621a4b36c0",
-      "minimumAppVersion": "0.1.0",
       "tags": [
         "children",
         "pre-a1",
         "starter",
         "czech-english",
         "textbook-companion-template"
-      ]
-    },
-    {
-      "id": "org.lexiquest.cs-en.super-minds-2-starter-companion",
-      "version": "1.0.0",
-      "name": "Super Minds Second Edition Starter - LexiQuest Companion",
-      "description": "Unofficial Czech-English topic-aligned companion Adventure for young learners using Super Minds Second Edition Starter Level. Contains original LexiQuest vocabulary and practice structure, not copied textbook pages or media.",
-      "languages": [
-        "cs",
-        "en"
       ],
-      "authors": [
-        "LexiQuest"
-      ],
-      "license": "CC-BY-4.0",
-      "size": 5443817,
-      "downloadUrl": "libraries/cs-en/super-minds-2-starter-companion/releases/1.0.0/library.zip",
-      "sha256": "f8e573d1962cbda16ee8fb032d7a510fbfe77b8187934495451b075430cfee35",
+      "questCount": 8,
+      "senseCount": 0,
+      "challengeTypes": [],
+      "hasImages": false,
+      "hasAudio": false,
+      "coverFallback": {
+        "letter": "S",
+        "colorHashSource": "Super Minds Second Edition Starter Level - Unofficial Template"
+      },
+      "size": 37039,
+      "downloadUrl": "libraries/cs-en/super-minds-second-edition-starter-template/releases/1.0.0/library.zip",
+      "sha256": "7f3ed25def0d3cce752fb700f0631a4c1e3b7d77fc4c208bb99234621a4b36c0",
       "minimumAppVersion": "0.1.0",
-      "tags": [
-        "children",
-        "beginner",
-        "pre-a1",
-        "czech-english",
-        "textbook-companion",
-        "super-minds",
-        "starter",
-        "unofficial"
-      ]
+      "updatedAt": "2026-06-15T15:13:30.000Z"
     }
   ]
 }
