@@ -1,0 +1,2467 @@
+schemaVersion: '1.7'
+kind: lexiquest.dictionary
+items:
+- id: hello-and-friends-hello
+  terms:
+    cs:
+    - value: ahoj
+      preferred: true
+    en:
+    - value: hello
+      preferred: true
+    - value: hi
+      preferred: false
+  imageRefs:
+  - images/vocabulary/hello-and-friends-hello.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-hello.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - phrase
+- id: hello-and-friends-goodbye
+  terms:
+    cs:
+    - value: na shledanou
+      preferred: true
+    en:
+    - value: goodbye
+      preferred: true
+    - value: bye
+      preferred: false
+  imageRefs:
+  - images/vocabulary/hello-and-friends-goodbye.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-goodbye.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - phrase
+- id: hello-and-friends-teacher
+  terms:
+    cs:
+    - value: učitel
+      preferred: true
+    - value: učitelka
+      preferred: false
+    en:
+    - value: teacher
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-teacher.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-teacher.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - noun
+- id: hello-and-friends-friend
+  terms:
+    cs:
+    - value: kamarád
+      preferred: true
+    - value: kamarádka
+      preferred: false
+    en:
+    - value: friend
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-friend.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-friend.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - noun
+- id: hello-and-friends-boy
+  terms:
+    cs:
+    - value: chlapec
+      preferred: true
+    - value: kluk
+      preferred: false
+    en:
+    - value: boy
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-boy.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-boy.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - noun
+- id: hello-and-friends-girl
+  terms:
+    cs:
+    - value: dívka
+      preferred: true
+    - value: holka
+      preferred: false
+    en:
+    - value: girl
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-girl.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-girl.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - noun
+- id: hello-and-friends-name
+  terms:
+    cs:
+    - value: jméno
+      preferred: true
+    en:
+    - value: name
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-name.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-name.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - noun
+- id: hello-and-friends-yes
+  terms:
+    cs:
+    - value: ano
+      preferred: true
+    en:
+    - value: 'yes'
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-yes.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-yes.mp3
+  partOfSpeech: adverb
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - adverb
+- id: hello-and-friends-no
+  terms:
+    cs:
+    - value: ne
+      preferred: true
+    en:
+    - value: 'no'
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-no.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-no.mp3
+  partOfSpeech: adverb
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - adverb
+- id: hello-and-friends-please
+  terms:
+    cs:
+    - value: prosím
+      preferred: true
+    en:
+    - value: please
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-please.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-please.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - phrase
+- id: hello-and-friends-thank-you
+  terms:
+    cs:
+    - value: děkuji
+      preferred: true
+    en:
+    - value: thank you
+      preferred: true
+    - value: thanks
+      preferred: false
+  imageRefs:
+  - images/vocabulary/hello-and-friends-thank-you.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-thank-you.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - phrase
+- id: hello-and-friends-what-is-your-name
+  terms:
+    cs:
+    - value: jak se jmenuješ
+      preferred: true
+    en:
+    - value: what's your name
+      preferred: true
+    - value: what is your name
+      preferred: false
+  imageRefs:
+  - images/vocabulary/hello-and-friends-what-is-your-name.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-what-is-your-name.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - phrase
+- id: hello-and-friends-my-name-is
+  terms:
+    cs:
+    - value: jmenuji se
+      preferred: true
+    - value: moje jméno je
+      preferred: false
+    en:
+    - value: my name is
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-my-name-is.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-my-name-is.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - phrase
+- id: hello-and-friends-how-are-you
+  terms:
+    cs:
+    - value: jak se máš
+      preferred: true
+    en:
+    - value: how are you
+      preferred: true
+  imageRefs:
+  - images/vocabulary/hello-and-friends-how-are-you.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-how-are-you.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - phrase
+- id: hello-and-friends-i-am-fine
+  terms:
+    cs:
+    - value: mám se dobře
+      preferred: true
+    en:
+    - value: I'm fine
+      preferred: true
+    - value: I am fine
+      preferred: false
+  imageRefs:
+  - images/vocabulary/hello-and-friends-i-am-fine.webp
+  audioRefs:
+    en:
+    - audio/en/hello-and-friends-i-am-fine.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - hello-and-friends
+  - phrase
+- id: colours-and-numbers-red
+  terms:
+    cs:
+    - value: červená
+      preferred: true
+    - value: červený
+      preferred: false
+    - value: červené
+      preferred: false
+    en:
+    - value: red
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-red.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-red.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-blue
+  terms:
+    cs:
+    - value: modrá
+      preferred: true
+    - value: modrý
+      preferred: false
+    - value: modré
+      preferred: false
+    en:
+    - value: blue
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-blue.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-blue.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-yellow
+  terms:
+    cs:
+    - value: žlutá
+      preferred: true
+    - value: žlutý
+      preferred: false
+    - value: žluté
+      preferred: false
+    en:
+    - value: yellow
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-yellow.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-yellow.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-green
+  terms:
+    cs:
+    - value: zelená
+      preferred: true
+    - value: zelený
+      preferred: false
+    - value: zelené
+      preferred: false
+    en:
+    - value: green
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-green.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-green.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-black
+  terms:
+    cs:
+    - value: černá
+      preferred: true
+    - value: černý
+      preferred: false
+    - value: černé
+      preferred: false
+    en:
+    - value: black
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-black.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-black.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-white
+  terms:
+    cs:
+    - value: bílá
+      preferred: true
+    - value: bílý
+      preferred: false
+    - value: bílé
+      preferred: false
+    en:
+    - value: white
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-white.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-white.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-orange
+  terms:
+    cs:
+    - value: oranžová
+      preferred: true
+    - value: oranžový
+      preferred: false
+    - value: oranžové
+      preferred: false
+    en:
+    - value: orange
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-orange.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-orange.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-pink
+  terms:
+    cs:
+    - value: růžová
+      preferred: true
+    - value: růžový
+      preferred: false
+    - value: růžové
+      preferred: false
+    en:
+    - value: pink
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-pink.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-pink.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-purple
+  terms:
+    cs:
+    - value: fialová
+      preferred: true
+    - value: fialový
+      preferred: false
+    - value: fialové
+      preferred: false
+    en:
+    - value: purple
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-purple.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-purple.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-brown
+  terms:
+    cs:
+    - value: hnědá
+      preferred: true
+    - value: hnědý
+      preferred: false
+    - value: hnědé
+      preferred: false
+    en:
+    - value: brown
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-brown.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-brown.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - adjective
+- id: colours-and-numbers-one
+  terms:
+    cs:
+    - value: jedna
+      preferred: true
+    - value: jeden
+      preferred: false
+    - value: jedno
+      preferred: false
+    en:
+    - value: one
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-one.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-one.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: colours-and-numbers-two
+  terms:
+    cs:
+    - value: dvě
+      preferred: true
+    - value: dva
+      preferred: false
+    en:
+    - value: two
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-two.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-two.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: colours-and-numbers-three
+  terms:
+    cs:
+    - value: tři
+      preferred: true
+    en:
+    - value: three
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-three.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-three.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: colours-and-numbers-four
+  terms:
+    cs:
+    - value: čtyři
+      preferred: true
+    en:
+    - value: four
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-four.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-four.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: colours-and-numbers-five
+  terms:
+    cs:
+    - value: pět
+      preferred: true
+    en:
+    - value: five
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-five.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-five.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: colours-and-numbers-six
+  terms:
+    cs:
+    - value: šest
+      preferred: true
+    en:
+    - value: six
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-six.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-six.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: colours-and-numbers-seven
+  terms:
+    cs:
+    - value: sedm
+      preferred: true
+    en:
+    - value: seven
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-seven.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-seven.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: colours-and-numbers-eight
+  terms:
+    cs:
+    - value: osm
+      preferred: true
+    en:
+    - value: eight
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-eight.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-eight.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: colours-and-numbers-nine
+  terms:
+    cs:
+    - value: devět
+      preferred: true
+    en:
+    - value: nine
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-nine.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-nine.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: colours-and-numbers-ten
+  terms:
+    cs:
+    - value: deset
+      preferred: true
+    en:
+    - value: ten
+      preferred: true
+  imageRefs:
+  - images/vocabulary/colours-and-numbers-ten.webp
+  audioRefs:
+    en:
+    - audio/en/colours-and-numbers-ten.mp3
+  partOfSpeech: number
+  tags:
+  - super-minds-starter-companion
+  - colours-and-numbers
+  - number
+- id: school-things-book
+  terms:
+    cs:
+    - value: kniha
+      preferred: true
+    en:
+    - value: book
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-book.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-book.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-pen
+  terms:
+    cs:
+    - value: pero
+      preferred: true
+    en:
+    - value: pen
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-pen.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-pen.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-pencil
+  terms:
+    cs:
+    - value: tužka
+      preferred: true
+    en:
+    - value: pencil
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-pencil.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-pencil.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-school-bag
+  terms:
+    cs:
+    - value: školní taška
+      preferred: true
+    en:
+    - value: school bag
+      preferred: true
+    - value: bag
+      preferred: false
+  imageRefs:
+  - images/vocabulary/school-things-school-bag.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-school-bag.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-desk
+  terms:
+    cs:
+    - value: lavice
+      preferred: true
+    - value: stůl
+      preferred: false
+    en:
+    - value: desk
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-desk.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-desk.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-chair
+  terms:
+    cs:
+    - value: židle
+      preferred: true
+    en:
+    - value: chair
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-chair.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-chair.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-ruler
+  terms:
+    cs:
+    - value: pravítko
+      preferred: true
+    en:
+    - value: ruler
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-ruler.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-ruler.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-rubber
+  terms:
+    cs:
+    - value: guma
+      preferred: true
+    en:
+    - value: rubber
+      preferred: true
+    - value: eraser
+      preferred: false
+  imageRefs:
+  - images/vocabulary/school-things-rubber.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-rubber.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-crayon
+  terms:
+    cs:
+    - value: pastelka
+      preferred: true
+    en:
+    - value: crayon
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-crayon.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-crayon.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-notebook
+  terms:
+    cs:
+    - value: sešit
+      preferred: true
+    en:
+    - value: notebook
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-notebook.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-notebook.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-board
+  terms:
+    cs:
+    - value: tabule
+      preferred: true
+    en:
+    - value: board
+      preferred: true
+    - value: whiteboard
+      preferred: false
+  imageRefs:
+  - images/vocabulary/school-things-board.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-board.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-school
+  terms:
+    cs:
+    - value: škola
+      preferred: true
+    en:
+    - value: school
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-school.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-school.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - noun
+- id: school-things-open-your-book
+  terms:
+    cs:
+    - value: otevři si knihu
+      preferred: true
+    en:
+    - value: open your book
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-open-your-book.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-open-your-book.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - phrase
+- id: school-things-close-your-book
+  terms:
+    cs:
+    - value: zavři si knihu
+      preferred: true
+    en:
+    - value: close your book
+      preferred: true
+  imageRefs:
+  - images/vocabulary/school-things-close-your-book.webp
+  audioRefs:
+    en:
+    - audio/en/school-things-close-your-book.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - school-things
+  - phrase
+- id: toys-and-play-ball
+  terms:
+    cs:
+    - value: míč
+      preferred: true
+    en:
+    - value: ball
+      preferred: true
+  imageRefs:
+  - images/vocabulary/toys-and-play-ball.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-ball.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-doll
+  terms:
+    cs:
+    - value: panenka
+      preferred: true
+    en:
+    - value: doll
+      preferred: true
+  imageRefs:
+  - images/vocabulary/toys-and-play-doll.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-doll.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-toy-car
+  terms:
+    cs:
+    - value: autíčko
+      preferred: true
+    en:
+    - value: toy car
+      preferred: true
+    - value: car
+      preferred: false
+  imageRefs:
+  - images/vocabulary/toys-and-play-toy-car.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-toy-car.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-train
+  terms:
+    cs:
+    - value: vlak
+      preferred: true
+    en:
+    - value: train
+      preferred: true
+  imageRefs:
+  - images/vocabulary/toys-and-play-train.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-train.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-bike
+  terms:
+    cs:
+    - value: kolo
+      preferred: true
+    en:
+    - value: bike
+      preferred: true
+    - value: bicycle
+      preferred: false
+  imageRefs:
+  - images/vocabulary/toys-and-play-bike.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-bike.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-kite
+  terms:
+    cs:
+    - value: drak
+      preferred: true
+    en:
+    - value: kite
+      preferred: true
+  imageRefs:
+  - images/vocabulary/toys-and-play-kite.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-kite.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-robot
+  terms:
+    cs:
+    - value: robot
+      preferred: true
+    en:
+    - value: robot
+      preferred: true
+  imageRefs:
+  - images/vocabulary/toys-and-play-robot.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-robot.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-teddy-bear
+  terms:
+    cs:
+    - value: plyšový medvídek
+      preferred: true
+    en:
+    - value: teddy bear
+      preferred: true
+    - value: teddy
+      preferred: false
+  imageRefs:
+  - images/vocabulary/toys-and-play-teddy-bear.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-teddy-bear.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-blocks
+  terms:
+    cs:
+    - value: kostky
+      preferred: true
+    en:
+    - value: blocks
+      preferred: true
+    - value: building blocks
+      preferred: false
+  imageRefs:
+  - images/vocabulary/toys-and-play-blocks.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-blocks.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-game
+  terms:
+    cs:
+    - value: hra
+      preferred: true
+    en:
+    - value: game
+      preferred: true
+  imageRefs:
+  - images/vocabulary/toys-and-play-game.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-game.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - noun
+- id: toys-and-play-play
+  terms:
+    cs:
+    - value: hrát si
+      preferred: true
+    en:
+    - value: play
+      preferred: true
+  imageRefs:
+  - images/vocabulary/toys-and-play-play.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-play.mp3
+  partOfSpeech: verb
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - verb
+- id: toys-and-play-lets-play
+  terms:
+    cs:
+    - value: pojďme si hrát
+      preferred: true
+    en:
+    - value: let's play
+      preferred: true
+    - value: let us play
+      preferred: false
+  imageRefs:
+  - images/vocabulary/toys-and-play-lets-play.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-lets-play.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - phrase
+- id: toys-and-play-my-favourite-toy
+  terms:
+    cs:
+    - value: moje oblíbená hračka
+      preferred: true
+    en:
+    - value: my favourite toy
+      preferred: true
+    - value: my favorite toy
+      preferred: false
+  imageRefs:
+  - images/vocabulary/toys-and-play-my-favourite-toy.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-my-favourite-toy.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - phrase
+- id: toys-and-play-have-you-got
+  terms:
+    cs:
+    - value: máš
+      preferred: true
+    en:
+    - value: have you got
+      preferred: true
+    - value: do you have
+      preferred: false
+  imageRefs:
+  - images/vocabulary/toys-and-play-have-you-got.webp
+  audioRefs:
+    en:
+    - audio/en/toys-and-play-have-you-got.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - toys-and-play
+  - phrase
+- id: my-family-mum
+  terms:
+    cs:
+    - value: maminka
+      preferred: true
+    - value: matka
+      preferred: false
+    en:
+    - value: mum
+      preferred: true
+    - value: mom
+      preferred: false
+    - value: mother
+      preferred: false
+  imageRefs:
+  - images/vocabulary/my-family-mum.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-mum.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - noun
+- id: my-family-dad
+  terms:
+    cs:
+    - value: tatínek
+      preferred: true
+    - value: otec
+      preferred: false
+    en:
+    - value: dad
+      preferred: true
+    - value: father
+      preferred: false
+  imageRefs:
+  - images/vocabulary/my-family-dad.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-dad.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - noun
+- id: my-family-sister
+  terms:
+    cs:
+    - value: sestra
+      preferred: true
+    en:
+    - value: sister
+      preferred: true
+  imageRefs:
+  - images/vocabulary/my-family-sister.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-sister.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - noun
+- id: my-family-brother
+  terms:
+    cs:
+    - value: bratr
+      preferred: true
+    en:
+    - value: brother
+      preferred: true
+  imageRefs:
+  - images/vocabulary/my-family-brother.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-brother.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - noun
+- id: my-family-grandma
+  terms:
+    cs:
+    - value: babička
+      preferred: true
+    en:
+    - value: grandma
+      preferred: true
+    - value: granny
+      preferred: false
+    - value: grandmother
+      preferred: false
+  imageRefs:
+  - images/vocabulary/my-family-grandma.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-grandma.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - noun
+- id: my-family-grandpa
+  terms:
+    cs:
+    - value: dědeček
+      preferred: true
+    en:
+    - value: grandpa
+      preferred: true
+    - value: grandad
+      preferred: false
+    - value: grandfather
+      preferred: false
+  imageRefs:
+  - images/vocabulary/my-family-grandpa.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-grandpa.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - noun
+- id: my-family-baby
+  terms:
+    cs:
+    - value: miminko
+      preferred: true
+    en:
+    - value: baby
+      preferred: true
+  imageRefs:
+  - images/vocabulary/my-family-baby.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-baby.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - noun
+- id: my-family-family
+  terms:
+    cs:
+    - value: rodina
+      preferred: true
+    en:
+    - value: family
+      preferred: true
+  imageRefs:
+  - images/vocabulary/my-family-family.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-family.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - noun
+- id: my-family-parents
+  terms:
+    cs:
+    - value: rodiče
+      preferred: true
+    en:
+    - value: parents
+      preferred: true
+  imageRefs:
+  - images/vocabulary/my-family-parents.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-parents.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - noun
+- id: my-family-me
+  terms:
+    cs:
+    - value: já
+      preferred: true
+    en:
+    - value: me
+      preferred: true
+  imageRefs:
+  - images/vocabulary/my-family-me.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-me.mp3
+  partOfSpeech: pronoun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - pronoun
+- id: my-family-he
+  terms:
+    cs:
+    - value: 'on'
+      preferred: true
+    en:
+    - value: he
+      preferred: true
+  imageRefs:
+  - images/vocabulary/my-family-he.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-he.mp3
+  partOfSpeech: pronoun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - pronoun
+- id: my-family-she
+  terms:
+    cs:
+    - value: ona
+      preferred: true
+    en:
+    - value: she
+      preferred: true
+  imageRefs:
+  - images/vocabulary/my-family-she.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-she.mp3
+  partOfSpeech: pronoun
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - pronoun
+- id: my-family-this-is-my
+  terms:
+    cs:
+    - value: tohle je můj
+      preferred: true
+    - value: tohle je moje
+      preferred: false
+    en:
+    - value: this is my
+      preferred: true
+  imageRefs:
+  - images/vocabulary/my-family-this-is-my.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-this-is-my.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - phrase
+- id: my-family-who-is-this
+  terms:
+    cs:
+    - value: kdo je to
+      preferred: true
+    en:
+    - value: who is this
+      preferred: true
+    - value: who's this
+      preferred: false
+  imageRefs:
+  - images/vocabulary/my-family-who-is-this.webp
+  audioRefs:
+    en:
+    - audio/en/my-family-who-is-this.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - my-family
+  - phrase
+- id: pets-and-animals-cat
+  terms:
+    cs:
+    - value: kočka
+      preferred: true
+    en:
+    - value: cat
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-cat.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-cat.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-dog
+  terms:
+    cs:
+    - value: pes
+      preferred: true
+    en:
+    - value: dog
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-dog.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-dog.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-bird
+  terms:
+    cs:
+    - value: pták
+      preferred: true
+    en:
+    - value: bird
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-bird.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-bird.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-fish
+  terms:
+    cs:
+    - value: ryba
+      preferred: true
+    en:
+    - value: fish
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-fish.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-fish.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-rabbit
+  terms:
+    cs:
+    - value: králík
+      preferred: true
+    en:
+    - value: rabbit
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-rabbit.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-rabbit.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-turtle
+  terms:
+    cs:
+    - value: želva
+      preferred: true
+    en:
+    - value: turtle
+      preferred: true
+    - value: tortoise
+      preferred: false
+  imageRefs:
+  - images/vocabulary/pets-and-animals-turtle.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-turtle.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-mouse
+  terms:
+    cs:
+    - value: myš
+      preferred: true
+    en:
+    - value: mouse
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-mouse.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-mouse.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-horse
+  terms:
+    cs:
+    - value: kůň
+      preferred: true
+    en:
+    - value: horse
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-horse.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-horse.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-duck
+  terms:
+    cs:
+    - value: kachna
+      preferred: true
+    en:
+    - value: duck
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-duck.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-duck.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-pet
+  terms:
+    cs:
+    - value: domácí mazlíček
+      preferred: true
+    en:
+    - value: pet
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-pet.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-pet.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-animal
+  terms:
+    cs:
+    - value: zvíře
+      preferred: true
+    en:
+    - value: animal
+      preferred: true
+  imageRefs:
+  - images/vocabulary/pets-and-animals-animal.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-animal.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - noun
+- id: pets-and-animals-i-have-a
+  terms:
+    cs:
+    - value: mám
+      preferred: true
+    en:
+    - value: I have a
+      preferred: true
+    - value: I've got a
+      preferred: false
+    - value: I have got a
+      preferred: false
+  imageRefs:
+  - images/vocabulary/pets-and-animals-i-have-a.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-i-have-a.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - phrase
+- id: pets-and-animals-have-you-got-a
+  terms:
+    cs:
+    - value: máš
+      preferred: true
+    en:
+    - value: have you got a
+      preferred: true
+    - value: do you have a
+      preferred: false
+  imageRefs:
+  - images/vocabulary/pets-and-animals-have-you-got-a.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-have-you-got-a.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - phrase
+- id: pets-and-animals-yes-i-have
+  terms:
+    cs:
+    - value: ano, mám
+      preferred: true
+    en:
+    - value: yes, I have
+      preferred: true
+    - value: yes, I've got one
+      preferred: false
+  imageRefs:
+  - images/vocabulary/pets-and-animals-yes-i-have.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-yes-i-have.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - phrase
+- id: pets-and-animals-no-i-havent
+  terms:
+    cs:
+    - value: ne, nemám
+      preferred: true
+    en:
+    - value: no, I haven't
+      preferred: true
+    - value: no, I have not
+      preferred: false
+  imageRefs:
+  - images/vocabulary/pets-and-animals-no-i-havent.webp
+  audioRefs:
+    en:
+    - audio/en/pets-and-animals-no-i-havent.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - pets-and-animals
+  - phrase
+- id: body-and-actions-head
+  terms:
+    cs:
+    - value: hlava
+      preferred: true
+    en:
+    - value: head
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-head.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-head.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - noun
+- id: body-and-actions-hand
+  terms:
+    cs:
+    - value: ruka
+      preferred: true
+    en:
+    - value: hand
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-hand.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-hand.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - noun
+- id: body-and-actions-eye
+  terms:
+    cs:
+    - value: oko
+      preferred: true
+    en:
+    - value: eye
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-eye.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-eye.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - noun
+- id: body-and-actions-mouth
+  terms:
+    cs:
+    - value: ústa
+      preferred: true
+    en:
+    - value: mouth
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-mouth.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-mouth.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - noun
+- id: body-and-actions-nose
+  terms:
+    cs:
+    - value: nos
+      preferred: true
+    en:
+    - value: nose
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-nose.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-nose.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - noun
+- id: body-and-actions-ear
+  terms:
+    cs:
+    - value: ucho
+      preferred: true
+    en:
+    - value: ear
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-ear.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-ear.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - noun
+- id: body-and-actions-arm
+  terms:
+    cs:
+    - value: paže
+      preferred: true
+    - value: ruka
+      preferred: false
+    en:
+    - value: arm
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-arm.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-arm.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - noun
+- id: body-and-actions-leg
+  terms:
+    cs:
+    - value: noha
+      preferred: true
+    en:
+    - value: leg
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-leg.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-leg.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - noun
+- id: body-and-actions-foot
+  terms:
+    cs:
+    - value: chodidlo
+      preferred: true
+    en:
+    - value: foot
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-foot.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-foot.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - noun
+- id: body-and-actions-run
+  terms:
+    cs:
+    - value: běhat
+      preferred: true
+    en:
+    - value: run
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-run.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-run.mp3
+  partOfSpeech: verb
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - verb
+- id: body-and-actions-jump
+  terms:
+    cs:
+    - value: skákat
+      preferred: true
+    en:
+    - value: jump
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-jump.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-jump.mp3
+  partOfSpeech: verb
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - verb
+- id: body-and-actions-sing
+  terms:
+    cs:
+    - value: zpívat
+      preferred: true
+    en:
+    - value: sing
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-sing.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-sing.mp3
+  partOfSpeech: verb
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - verb
+- id: body-and-actions-dance
+  terms:
+    cs:
+    - value: tancovat
+      preferred: true
+    en:
+    - value: dance
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-dance.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-dance.mp3
+  partOfSpeech: verb
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - verb
+- id: body-and-actions-clap
+  terms:
+    cs:
+    - value: tleskat
+      preferred: true
+    en:
+    - value: clap
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-clap.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-clap.mp3
+  partOfSpeech: verb
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - verb
+- id: body-and-actions-stand-up
+  terms:
+    cs:
+    - value: postav se
+      preferred: true
+    en:
+    - value: stand up
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-stand-up.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-stand-up.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - phrase
+- id: body-and-actions-sit-down
+  terms:
+    cs:
+    - value: sedni si
+      preferred: true
+    en:
+    - value: sit down
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-sit-down.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-sit-down.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - phrase
+- id: body-and-actions-touch
+  terms:
+    cs:
+    - value: dotknout se
+      preferred: true
+    en:
+    - value: touch
+      preferred: true
+  imageRefs:
+  - images/vocabulary/body-and-actions-touch.webp
+  audioRefs:
+    en:
+    - audio/en/body-and-actions-touch.mp3
+  partOfSpeech: verb
+  tags:
+  - super-minds-starter-companion
+  - body-and-actions
+  - verb
+- id: food-and-feelings-apple
+  terms:
+    cs:
+    - value: jablko
+      preferred: true
+    en:
+    - value: apple
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-apple.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-apple.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - noun
+- id: food-and-feelings-banana
+  terms:
+    cs:
+    - value: banán
+      preferred: true
+    en:
+    - value: banana
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-banana.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-banana.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - noun
+- id: food-and-feelings-milk
+  terms:
+    cs:
+    - value: mléko
+      preferred: true
+    en:
+    - value: milk
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-milk.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-milk.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - noun
+- id: food-and-feelings-water
+  terms:
+    cs:
+    - value: voda
+      preferred: true
+    en:
+    - value: water
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-water.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-water.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - noun
+- id: food-and-feelings-cake
+  terms:
+    cs:
+    - value: dort
+      preferred: true
+    en:
+    - value: cake
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-cake.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-cake.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - noun
+- id: food-and-feelings-bread
+  terms:
+    cs:
+    - value: chléb
+      preferred: true
+    - value: pečivo
+      preferred: false
+    en:
+    - value: bread
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-bread.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-bread.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - noun
+- id: food-and-feelings-cheese
+  terms:
+    cs:
+    - value: sýr
+      preferred: true
+    en:
+    - value: cheese
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-cheese.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-cheese.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - noun
+- id: food-and-feelings-juice
+  terms:
+    cs:
+    - value: džus
+      preferred: true
+    - value: šťáva
+      preferred: false
+    en:
+    - value: juice
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-juice.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-juice.mp3
+  partOfSpeech: noun
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - noun
+- id: food-and-feelings-happy
+  terms:
+    cs:
+    - value: šťastný
+      preferred: true
+    - value: šťastná
+      preferred: false
+    - value: šťastné
+      preferred: false
+    en:
+    - value: happy
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-happy.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-happy.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - adjective
+- id: food-and-feelings-sad
+  terms:
+    cs:
+    - value: smutný
+      preferred: true
+    - value: smutná
+      preferred: false
+    - value: smutné
+      preferred: false
+    en:
+    - value: sad
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-sad.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-sad.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - adjective
+- id: food-and-feelings-hungry
+  terms:
+    cs:
+    - value: hladový
+      preferred: true
+    - value: hladová
+      preferred: false
+    - value: mám hlad
+      preferred: false
+    en:
+    - value: hungry
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-hungry.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-hungry.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - adjective
+- id: food-and-feelings-thirsty
+  terms:
+    cs:
+    - value: žíznivý
+      preferred: true
+    - value: žíznivá
+      preferred: false
+    - value: mám žízeň
+      preferred: false
+    en:
+    - value: thirsty
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-thirsty.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-thirsty.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - adjective
+- id: food-and-feelings-tired
+  terms:
+    cs:
+    - value: unavený
+      preferred: true
+    - value: unavená
+      preferred: false
+    - value: unavené
+      preferred: false
+    en:
+    - value: tired
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-tired.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-tired.mp3
+  partOfSpeech: adjective
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - adjective
+- id: food-and-feelings-like
+  terms:
+    cs:
+    - value: mít rád
+      preferred: true
+    - value: mít ráda
+      preferred: false
+    en:
+    - value: like
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-like.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-like.mp3
+  partOfSpeech: verb
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - verb
+- id: food-and-feelings-i-like
+  terms:
+    cs:
+    - value: mám rád
+      preferred: true
+    - value: mám ráda
+      preferred: false
+    en:
+    - value: I like
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-i-like.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-i-like.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - phrase
+- id: food-and-feelings-i-dont-like
+  terms:
+    cs:
+    - value: nemám rád
+      preferred: true
+    - value: nemám ráda
+      preferred: false
+    en:
+    - value: I don't like
+      preferred: true
+    - value: I do not like
+      preferred: false
+  imageRefs:
+  - images/vocabulary/food-and-feelings-i-dont-like.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-i-dont-like.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - phrase
+- id: food-and-feelings-do-you-like
+  terms:
+    cs:
+    - value: máš rád
+      preferred: true
+    - value: máš ráda
+      preferred: false
+    en:
+    - value: do you like
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-do-you-like.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-do-you-like.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - phrase
+- id: food-and-feelings-yes-i-do
+  terms:
+    cs:
+    - value: ano
+      preferred: true
+    en:
+    - value: yes, I do
+      preferred: true
+  imageRefs:
+  - images/vocabulary/food-and-feelings-yes-i-do.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-yes-i-do.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - phrase
+- id: food-and-feelings-no-i-dont
+  terms:
+    cs:
+    - value: ne
+      preferred: true
+    en:
+    - value: no, I don't
+      preferred: true
+    - value: no, I do not
+      preferred: false
+  imageRefs:
+  - images/vocabulary/food-and-feelings-no-i-dont.webp
+  audioRefs:
+    en:
+    - audio/en/food-and-feelings-no-i-dont.mp3
+  partOfSpeech: phrase
+  tags:
+  - super-minds-starter-companion
+  - food-and-feelings
+  - phrase

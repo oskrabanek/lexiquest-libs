@@ -1,0 +1,72 @@
+id: quest-03-school-things
+title:
+  en: School Things
+  cs: Školní věci
+order: 3
+vocabularyIds:
+- school-things-book
+- school-things-pen
+- school-things-pencil
+- school-things-school-bag
+- school-things-desk
+- school-things-chair
+- school-things-ruler
+- school-things-rubber
+- school-things-crayon
+- school-things-notebook
+- school-things-board
+- school-things-school
+- school-things-open-your-book
+- school-things-close-your-book
+legacyHints:
+  nonBinding: true
+  note: Imported from the previous lesson challenge plan. The engine must not treat this as a mandatory runtime sequence.
+  quizTypes:
+  - word-typing
+  - missing-letters
+  - picture-choice
+  - voice
+  - listen-picture
+  challenges:
+  - challengeId: school-things-word-typing
+    title:
+      en: Word Bridge
+      cs: Most slovíček
+    order: 1
+    quizType: word-typing
+    review: false
+  - challengeId: school-things-missing-letters
+    title:
+      en: Letter Trail
+      cs: Stezka písmen
+    order: 2
+    quizType: missing-letters
+    review: false
+  - challengeId: school-things-picture-choice
+    title:
+      en: Picture Hunt
+      cs: Lov obrázků
+    order: 3
+    quizType: picture-choice
+    review: false
+  - challengeId: school-things-voice
+    title:
+      en: Say It Out Loud
+      cs: Řekni to nahlas
+    order: 4
+    quizType: voice
+    review: false
+  - challengeId: school-things-listen-picture
+    title:
+      en: Listen and Choose
+      cs: Poslechni a vyber
+    order: 5
+    quizType: listen-picture
+    review: false
+  - challengeId: school-things-review
+    title:
+      en: Quest Review
+      cs: Opakování Questu
+    order: 6
+    quizType: word-typing
+    review: true

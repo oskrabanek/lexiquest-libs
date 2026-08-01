@@ -1,0 +1,59 @@
+{
+  "formatVersion": 1,
+  "generatedAt": "2026-06-15T17:13:30Z",
+  "libraries": [
+    {
+      "id": "org.lexiquest.cs-en.super-minds-2-starter-template",
+      "version": "1.0.0",
+      "name": "Super Minds Second Edition Starter Level - Unofficial Template",
+      "description": "Original Czech-English starter-level LexiQuest companion template. Does not include proprietary Cambridge textbook content.",
+      "languages": [
+        "cs",
+        "en"
+      ],
+      "authors": [
+        "LexiQuest generated template"
+      ],
+      "license": "CC-BY-4.0",
+      "size": 37039,
+      "downloadUrl": "libraries/cs-en/super-minds-second-edition-starter-template/releases/1.0.0/library.zip",
+      "sha256": "7f3ed25def0d3cce752fb700f0631a4c1e3b7d77fc4c208bb99234621a4b36c0",
+      "minimumAppVersion": "0.1.0",
+      "tags": [
+        "children",
+        "pre-a1",
+        "starter",
+        "czech-english",
+        "textbook-companion-template"
+      ]
+    },
+    {
+      "id": "org.lexiquest.cs-en.super-minds-2-starter-companion",
+      "version": "1.0.0",
+      "name": "Super Minds Second Edition Starter - LexiQuest Companion",
+      "description": "Unofficial Czech-English topic-aligned companion Adventure for young learners using Super Minds Second Edition Starter Level. Contains original LexiQuest vocabulary and practice structure, not copied textbook pages or media.",
+      "languages": [
+        "cs",
+        "en"
+      ],
+      "authors": [
+        "LexiQuest"
+      ],
+      "license": "CC-BY-4.0",
+      "size": 5443817,
+      "downloadUrl": "libraries/cs-en/super-minds-2-starter-companion/releases/1.0.0/library.zip",
+      "sha256": "f8e573d1962cbda16ee8fb032d7a510fbfe77b8187934495451b075430cfee35",
+      "minimumAppVersion": "0.1.0",
+      "tags": [
+        "children",
+        "beginner",
+        "pre-a1",
+        "czech-english",
+        "textbook-companion",
+        "super-minds",
+        "starter",
+        "unofficial"
+      ]
+    }
+  ]
+}

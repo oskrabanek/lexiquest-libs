@@ -1,0 +1,72 @@
+id: quest-04-toys-and-play
+title:
+  en: Toys and Play
+  cs: Hračky a hraní
+order: 4
+vocabularyIds:
+- toys-and-play-ball
+- toys-and-play-doll
+- toys-and-play-toy-car
+- toys-and-play-train
+- toys-and-play-bike
+- toys-and-play-kite
+- toys-and-play-robot
+- toys-and-play-teddy-bear
+- toys-and-play-blocks
+- toys-and-play-game
+- toys-and-play-play
+- toys-and-play-lets-play
+- toys-and-play-my-favourite-toy
+- toys-and-play-have-you-got
+legacyHints:
+  nonBinding: true
+  note: Imported from the previous lesson challenge plan. The engine must not treat this as a mandatory runtime sequence.
+  quizTypes:
+  - word-typing
+  - missing-letters
+  - picture-choice
+  - voice
+  - picture-listen
+  challenges:
+  - challengeId: toys-and-play-word-typing
+    title:
+      en: Word Bridge
+      cs: Most slovíček
+    order: 1
+    quizType: word-typing
+    review: false
+  - challengeId: toys-and-play-missing-letters
+    title:
+      en: Letter Trail
+      cs: Stezka písmen
+    order: 2
+    quizType: missing-letters
+    review: false
+  - challengeId: toys-and-play-picture-choice
+    title:
+      en: Picture Hunt
+      cs: Lov obrázků
+    order: 3
+    quizType: picture-choice
+    review: false
+  - challengeId: toys-and-play-voice
+    title:
+      en: Say It Out Loud
+      cs: Řekni to nahlas
+    order: 4
+    quizType: voice
+    review: false
+  - challengeId: toys-and-play-picture-listen
+    title:
+      en: Picture and Sound
+      cs: Obrázek a zvuk
+    order: 5
+    quizType: picture-listen
+    review: false
+  - challengeId: toys-and-play-review
+    title:
+      en: Quest Review
+      cs: Opakování Questu
+    order: 6
+    quizType: word-typing
+    review: true

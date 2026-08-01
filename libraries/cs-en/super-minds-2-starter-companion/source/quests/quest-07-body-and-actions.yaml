@@ -1,0 +1,75 @@
+id: quest-07-body-and-actions
+title:
+  en: Body and Actions
+  cs: Tělo a činnosti
+order: 7
+vocabularyIds:
+- body-and-actions-head
+- body-and-actions-hand
+- body-and-actions-eye
+- body-and-actions-mouth
+- body-and-actions-nose
+- body-and-actions-ear
+- body-and-actions-arm
+- body-and-actions-leg
+- body-and-actions-foot
+- body-and-actions-run
+- body-and-actions-jump
+- body-and-actions-sing
+- body-and-actions-dance
+- body-and-actions-clap
+- body-and-actions-stand-up
+- body-and-actions-sit-down
+- body-and-actions-touch
+legacyHints:
+  nonBinding: true
+  note: Imported from the previous lesson challenge plan. The engine must not treat this as a mandatory runtime sequence.
+  quizTypes:
+  - word-typing
+  - missing-letters
+  - picture-choice
+  - voice
+  - picture-listen
+  challenges:
+  - challengeId: body-and-actions-word-typing
+    title:
+      en: Word Bridge
+      cs: Most slovíček
+    order: 1
+    quizType: word-typing
+    review: false
+  - challengeId: body-and-actions-missing-letters
+    title:
+      en: Letter Trail
+      cs: Stezka písmen
+    order: 2
+    quizType: missing-letters
+    review: false
+  - challengeId: body-and-actions-picture-choice
+    title:
+      en: Picture Hunt
+      cs: Lov obrázků
+    order: 3
+    quizType: picture-choice
+    review: false
+  - challengeId: body-and-actions-voice
+    title:
+      en: Say It Out Loud
+      cs: Řekni to nahlas
+    order: 4
+    quizType: voice
+    review: false
+  - challengeId: body-and-actions-picture-listen
+    title:
+      en: Picture and Sound
+      cs: Obrázek a zvuk
+    order: 5
+    quizType: picture-listen
+    review: false
+  - challengeId: body-and-actions-review
+    title:
+      en: Quest Review
+      cs: Opakování Questu
+    order: 6
+    quizType: word-typing
+    review: true
