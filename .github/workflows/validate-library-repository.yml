@@ -1,0 +1,47 @@
+name: Validate library repository
+
+on:
+  pull_request:
+    paths:
+      - 'libraries/**'
+      - 'catalog.json'
+      - 'schemas/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/validate-library-repository.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'libraries/**'
+      - 'catalog.json'
+      - 'schemas/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/validate-library-repository.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-library-repository:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate library packages
+        run: node scripts/validate-library-package.mjs libraries/*.zip
+
+      - name: Check catalog is current
+        run: node scripts/generate-library-catalog.mjs --check

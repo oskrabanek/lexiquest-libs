@@ -1,22 +1,37 @@
-# LexiQuest Library: Super Minds Second Edition Starter Level – Unofficial Template
+﻿# LexiQuest Libraries
 
-This is an **unofficial LexiQuest companion template** for Czech-English starter-level practice.
+This repository publishes resource-only Adventure libraries for LexiQuest.
 
-## Important copyright note
+The app-facing entry point is:
 
-This package does **not** copy Cambridge textbook content. It does not include proprietary unit text, official word lists, artwork, audio, exercises, or lesson wording from *Super Minds Second Edition Starter Level*.
+```text
+catalog.json
+```
 
-It is a structured, editable LexiQuest library scaffold with original starter-level vocabulary and generated placeholder SVG images. If you want exact textbook alignment, replace or extend the vocabulary and Challenges only with content you are licensed to use.
+Published libraries are ZIP packages under top-level `libraries/*.zip`. The app does not consume unpacked source folders directly.
 
-## Structure
+## Current commands
 
-- `source/manifest.yaml`
-- `source/dictionary/core.yaml`
-- `source/lessons/*.yaml`
-- `source/assets/images/vocabulary/*.svg`
-- `releases/1.0.0/library.zip`
-- `catalog.json`
+```powershell
+npm ci
+npm run library:validate
+npm run library:catalog
+npm run library:catalog:check
+npm run library:check
+```
 
-## Language pair
+`library:validate` validates every top-level package ZIP.
 
-Canonical pair: `cs-en`.
+`library:catalog` regenerates deterministic `catalog.json` from the ZIP packages, including SHA-256 checksums and ZIP sizes.
+
+`library:catalog:check` fails when the committed catalog is stale.
+
+## Package safety
+
+Library packages are data and media only. The validator rejects executable/code files, SVG files for MVP, unsafe paths, wrapper directories, unsupported file types, missing references, and size-limit violations.
+
+## Published packages
+
+- `libraries/cs-en-super-minds-2-starter-companion-1.0.0.zip`
+
+More libraries can be added by committing a valid ZIP to `libraries/`, running `npm run library:catalog`, and committing the updated `catalog.json`.

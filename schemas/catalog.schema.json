@@ -1,6 +1,86 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "catalog.schema.json",
+  "title": "LexiQuest Library Catalog",
   "type": "object",
-  "additionalProperties": true
+  "additionalProperties": false,
+  "required": ["formatVersion", "libraries"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "libraries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "id",
+          "version",
+          "title",
+          "languagePair",
+          "packageFormatVersion",
+          "zipPath",
+          "sha256",
+          "sizeBytes"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "version": { "type": "string", "minLength": 1 },
+          "title": {
+            "anyOf": [
+              { "type": "string", "minLength": 1 },
+              {
+                "type": "object",
+                "additionalProperties": { "type": "string", "minLength": 1 }
+              }
+            ]
+          },
+          "description": {
+            "anyOf": [
+              { "type": "string" },
+              {
+                "type": "object",
+                "additionalProperties": { "type": "string" }
+              }
+            ]
+          },
+          "languagePair": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["source", "target"],
+            "properties": {
+              "source": { "type": "string", "minLength": 2 },
+              "target": { "type": "string", "minLength": 2 }
+            }
+          },
+          "packageFormatVersion": { "type": "integer", "minimum": 1 },
+          "zipPath": {
+            "type": "string",
+            "pattern": "^libraries/[^/\\\\]+\\.zip$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{64}$"
+          },
+          "sizeBytes": { "type": "integer", "minimum": 1 },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "minAppVersion": { "type": "string" },
+          "coverImage": { "type": "string" },
+          "author": { "type": "string" },
+          "license": { "type": "string" },
+          "questCount": { "type": "integer", "minimum": 0 },
+          "senseCount": { "type": "integer", "minimum": 0 },
+          "challengeTypes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "hasImages": { "type": "boolean" },
+          "hasAudio": { "type": "boolean" }
+        }
+      }
+    }
+  }
 }
