@@ -36,8 +36,10 @@ Library packages are data and media only. The validator rejects executable/code 
 ## Published packages
 
 - `libraries/cs-en/super-minds-second-edition-starter-companion/releases/1.0.0/library.zip`
+- `libraries/cs-en/super-minds-second-edition-starter-template/releases/1.0.0/library.zip`
 
 More libraries can be added by committing a valid release ZIP at `libraries/<language-pair>/<library-slug>/releases/<version>/library.zip`, running `npm run library:catalog`, and committing the updated `catalog.json` plus generated `indexes/` files.
+
 
 
 
