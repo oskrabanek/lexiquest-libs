@@ -41,10 +41,11 @@ jobs:
         run: npm ci
 
       - name: Validate library packages
-        run: node scripts/validate-library-package.mjs libraries/*.zip
+        run: npm run library:validate
 
       - name: Check catalog is current
         run: node scripts/generate-library-catalog.mjs --check
 
       - name: Run pipeline tests
         run: npm test
+
