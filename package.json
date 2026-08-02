@@ -1,32 +1,32 @@
-﻿{
-  "name": "lexiquest-libs",
-  "version": "1.0.0",
-  "description": "Published ZIP library packages for LexiQuest.",
-  "type": "module",
-  "scripts": {
-    "library:validate": "node scripts/validate-library-package.mjs libraries/*.zip",
-    "library:catalog": "node scripts/generate-library-catalog.mjs --write",
-    "library:catalog:check": "node scripts/generate-library-catalog.mjs --check",
-    "library:check": "npm run library:validate && npm run library:catalog:check && npm test",
-    "test": "node scripts/test-library-pipeline.mjs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oskrabanek/lexiquest-libs.git"
-  },
-  "keywords": [
-    "lexiquest",
-    "language-learning",
-    "libraries"
-  ],
-  "author": "LexiQuest",
-  "license": "CC-BY-4.0",
-  "bugs": {
-    "url": "https://github.com/oskrabanek/lexiquest-libs/issues"
-  },
-  "homepage": "https://github.com/oskrabanek/lexiquest-libs#readme",
-  "dependencies": {
-    "yaml": "^2.9.0",
-    "yauzl": "^3.4.0"
-  }
+{
+    "name":  "lexiquest-libs",
+    "version":  "1.0.0",
+    "description":  "Published ZIP library packages for LexiQuest.",
+    "type":  "module",
+    "scripts":  {
+                    "library:validate":  "node scripts/validate-library-package.mjs libraries/**/*.zip",
+                    "library:catalog":  "node scripts/generate-library-catalog.mjs --write",
+                    "library:catalog:check":  "node scripts/generate-library-catalog.mjs --check",
+                    "library:check":  "npm run library:validate \u0026\u0026 npm run library:catalog:check \u0026\u0026 npm test",
+                    "test":  "node scripts/test-library-pipeline.mjs"
+                },
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/oskrabanek/lexiquest-libs.git"
+                   },
+    "keywords":  [
+                     "lexiquest",
+                     "language-learning",
+                     "libraries"
+                 ],
+    "author":  "LexiQuest",
+    "license":  "CC-BY-4.0",
+    "bugs":  {
+                 "url":  "https://github.com/oskrabanek/lexiquest-libs/issues"
+             },
+    "homepage":  "https://github.com/oskrabanek/lexiquest-libs#readme",
+    "dependencies":  {
+                         "yaml":  "^2.9.0",
+                         "yauzl":  "^3.4.0"
+                     }
 }

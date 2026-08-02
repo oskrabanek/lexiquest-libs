@@ -1,4 +1,4 @@
-﻿# LexiQuest Libraries
+# LexiQuest Libraries
 
 This repository publishes resource-only Adventure libraries for LexiQuest.
 
@@ -8,7 +8,7 @@ The app-facing entry point is:
 catalog.json
 ```
 
-Published libraries are ZIP packages under top-level `libraries/*.zip`. The app does not consume unpacked source folders directly, and published library sources are not kept in this repository. Optional generated indexes under `indexes/` are derived from the same validated package metadata as `catalog.json`.
+Published libraries are ZIP packages under `libraries/<language-pair>/<library-slug>/releases/<version>/library.zip`. The app does not consume unpacked source folders directly, and published library sources are not kept in this repository. Optional generated indexes under `indexes/` are derived from the same validated package metadata as `catalog.json`.
 
 ## Current commands
 
@@ -21,7 +21,7 @@ npm test
 npm run library:check
 ```
 
-`library:validate` validates every top-level package ZIP.
+`library:validate` validates every recursive release package ZIP under `libraries/**/*.zip`.
 
 `library:catalog` regenerates deterministic `catalog.json` and optional `indexes/*.json` from the ZIP packages, including SHA-256 checksums and ZIP sizes.
 
@@ -35,7 +35,8 @@ Library packages are data and media only. The validator rejects executable/code 
 
 ## Published packages
 
-- `libraries/cs-en-super-minds-2-starter-companion-1.0.0.zip`
+- `libraries/cs-en/super-minds-2-starter-companion/releases/1.0.0/library.zip`
 
-More libraries can be added by committing a valid ZIP to `libraries/`, running `npm run library:catalog`, and committing the updated `catalog.json` plus generated `indexes/` files.
+More libraries can be added by committing a valid release ZIP at `libraries/<language-pair>/<library-slug>/releases/<version>/library.zip`, running `npm run library:catalog`, and committing the updated `catalog.json` plus generated `indexes/` files.
+
 

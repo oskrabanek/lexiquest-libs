@@ -1,4 +1,4 @@
-﻿import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { validateLibraryPackage } from './library-package-utils.mjs';
 
@@ -11,7 +11,7 @@ const libraries = [];
 const seen = new Set();
 
 if (packagePaths.length === 0) {
-  throw new Error('No ZIP packages found under libraries/*.zip.');
+  throw new Error('No ZIP packages found under libraries/**/*.zip.');
 }
 
 for (const packagePath of packagePaths) {
@@ -71,13 +71,24 @@ function parseArgs(args) {
 }
 
 async function listZipPackages(librariesRoot) {
-  const entries = await readdir(librariesRoot, { withFileTypes: true });
-  return entries
-    .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith('.zip'))
-    .map((entry) => path.join(librariesRoot, entry.name))
-    .sort((left, right) => left.localeCompare(right));
-}
+  const packages = [];
 
+  async function visit(directory) {
+    const entries = await readdir(directory, { withFileTypes: true });
+    for (const entry of entries) {
+      const entryPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) {
+        if (entry.name === 'source') continue;
+        await visit(entryPath);
+      } else if (entry.isFile() && entry.name.toLowerCase().endsWith('.zip')) {
+        packages.push(entryPath);
+      }
+    }
+  }
+
+  await visit(librariesRoot);
+  return packages.sort((left, right) => left.localeCompare(right));
+}
 function toCatalogEntry(repositoryRoot, metadata) {
   return stripUndefined({
     id: metadata.id,

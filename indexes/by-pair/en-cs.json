@@ -17,7 +17,7 @@
         "source": "cs",
         "target": "en"
       },
-      "zipPath": "libraries/cs-en-super-minds-2-starter-companion-1.0.0.zip",
+      "zipPath": "libraries/cs-en/super-minds-2-starter-companion/releases/1.0.0/library.zip",
       "sha256": "f8e573d1962cbda16ee8fb032d7a510fbfe77b8187934495451b075430cfee35",
       "sizeBytes": 5443817,
       "author": "LexiQuest",

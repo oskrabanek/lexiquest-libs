@@ -1,4 +1,8 @@
-﻿node_modules/
+node_modules/
 npm-debug.log*
 .DS_Store
-libraries/*/
+
+# Authoring workspaces are not published from this repository.
+libraries/**/source/
+libraries/**/drafts/
+libraries/**/working/
