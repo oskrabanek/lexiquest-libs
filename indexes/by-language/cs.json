@@ -1,31 +1,58 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-06-15T17:13:30Z",
+  "key": "cs",
   "libraries": [
     {
-      "id": "org.lexiquest.cs-en.super-minds-2-starter-template",
+      "id": "org.lexiquest.cs-en.super-minds-2-starter-companion",
       "version": "1.0.0",
-      "name": "Super Minds Second Edition Starter Level - Unofficial Template",
-      "description": "Original Czech-English starter-level LexiQuest companion template. Does not include proprietary Cambridge textbook content.",
-      "languages": [
-        "cs",
-        "en"
-      ],
-      "authors": [
-        "LexiQuest generated template"
-      ],
+      "title": {
+        "en": "Super Minds Second Edition Starter – LexiQuest Companion",
+        "cs": "Super Minds Second Edition Starter – doprovodná výprava LexiQuest"
+      },
+      "description": {
+        "en": "Unofficial Czech-English topic-aligned companion Adventure for young learners using Super Minds Second Edition Starter Level. Contains original LexiQuest vocabulary and practice structure, not copied textbook pages or media.",
+        "cs": "Neoficiální česko-anglická doprovodná výprava pro děti používající Super Minds Second Edition Starter Level. Obsahuje původní slovní zásobu a strukturu procvičování LexiQuest, nikoli kopie stran ani médií z učebnice."
+      },
+      "languagePair": {
+        "source": "cs",
+        "target": "en"
+      },
+      "zipPath": "libraries/cs-en-super-minds-2-starter-companion-1.0.0.zip",
+      "sha256": "f8e573d1962cbda16ee8fb032d7a510fbfe77b8187934495451b075430cfee35",
+      "sizeBytes": 5443817,
+      "author": "LexiQuest",
       "license": "CC-BY-4.0",
-      "size": 37039,
-      "downloadUrl": "libraries/cs-en/super-minds-second-edition-starter-template/releases/1.0.0/library.zip",
-      "sha256": "7f3ed25def0d3cce752fb700f0631a4c1e3b7d77fc4c208bb99234621a4b36c0",
-      "minimumAppVersion": "0.1.0",
+      "difficulty": "beginner",
+      "targetAges": [
+        6,
+        9
+      ],
+      "questCount": 8,
+      "senseCount": 128,
+      "challengeTypes": [
+        "listen-picture",
+        "missing-letters",
+        "picture-choice",
+        "picture-listen",
+        "picture-typing",
+        "voice",
+        "voice-transcription",
+        "word-typing"
+      ],
+      "hasImages": true,
+      "hasAudio": true,
       "tags": [
         "children",
+        "beginner",
         "pre-a1",
+        "czech",
+        "english",
+        "textbook-companion",
+        "super-minds",
         "starter",
-        "czech-english",
-        "textbook-companion-template"
-      ]
+        "unofficial"
+      ],
+      "minAppVersion": "0.1.0"
     }
   ]
 }

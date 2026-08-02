@@ -94,6 +94,10 @@ async function testCatalogGenerationAndCheck() {
   });
 
   const firstCatalog = await readFile(path.join(repo, 'catalog.json'), 'utf8');
+  const firstSearchIndex = await readFile(path.join(repo, 'indexes/search.json'), 'utf8');
+  const firstLanguageIndex = await readFile(path.join(repo, 'indexes/by-language/en.json'), 'utf8');
+  assert(firstSearchIndex.includes('org.lexiquest.test.valid'), 'search index includes library metadata');
+  assert(firstLanguageIndex.includes('org.lexiquest.test.valid'), 'language index includes library metadata');
 
   runNode([catalogScript, '--check'], {
     cwd: repo,
@@ -106,7 +110,9 @@ async function testCatalogGenerationAndCheck() {
   });
 
   const secondCatalog = await readFile(path.join(repo, 'catalog.json'), 'utf8');
+  const secondSearchIndex = await readFile(path.join(repo, 'indexes/search.json'), 'utf8');
   assert(firstCatalog === secondCatalog, 'catalog generation is deterministic');
+  assert(firstSearchIndex === secondSearchIndex, 'index generation is deterministic');
 
   await writeFile(path.join(repo, 'catalog.json'), '{\n  "formatVersion": 1,\n  "libraries": []\n}\n', 'utf8');
   runNode([catalogScript, '--check'], {
@@ -114,6 +120,18 @@ async function testCatalogGenerationAndCheck() {
     label: 'stale catalog check fails',
     expectFailure: true,
     includes: 'catalog.json is stale'
+  });
+
+  runNode([catalogScript, '--write'], {
+    cwd: repo,
+    label: 'catalog rewrite restores indexes'
+  });
+  await writeFile(path.join(repo, 'indexes/search.json'), '{\n  "formatVersion": 1,\n  "libraries": []\n}\n', 'utf8');
+  runNode([catalogScript, '--check'], {
+    cwd: repo,
+    label: 'stale index check fails',
+    expectFailure: true,
+    includes: 'indexes/search.json is stale'
   });
 }
 
@@ -302,5 +320,6 @@ function assert(condition, message) {
     throw new Error(message);
   }
 }
+
 
 

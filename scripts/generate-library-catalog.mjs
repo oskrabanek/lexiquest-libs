@@ -1,10 +1,11 @@
-import { readFile, readdir, writeFile } from 'node:fs/promises';
+﻿import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { validateLibraryPackage } from './library-package-utils.mjs';
 
 const options = parseArgs(process.argv.slice(2));
 const repositoryRoot = process.cwd();
 const catalogPath = path.join(repositoryRoot, 'catalog.json');
+const indexesRoot = path.join(repositoryRoot, 'indexes');
 const packagePaths = await listZipPackages(path.join(repositoryRoot, 'libraries'));
 const libraries = [];
 const seen = new Set();
@@ -25,29 +26,25 @@ for (const packagePath of packagePaths) {
 
 const catalog = {
   formatVersion: 1,
-  libraries: libraries.sort((left, right) =>
-    left.id.localeCompare(right.id) || left.version.localeCompare(right.version)
-  )
+  libraries: sortCatalogEntries(libraries)
 };
 
-const nextContent = `${JSON.stringify(catalog, null, 2)}\n`;
+const catalogContent = toJsonContent(catalog);
+const indexFiles = buildIndexFiles(catalog.libraries);
 
 if (options.check) {
-  const currentContent = await readFile(catalogPath, 'utf8');
-  if (currentContent !== nextContent) {
-    console.error('catalog.json is stale.');
-    console.error('Run:');
-    console.error('  node scripts/generate-library-catalog.mjs --write');
-    console.error('Then commit the updated catalog.json.');
-    process.exitCode = 1;
-  } else {
-    console.log('catalog.json is current.');
+  await checkFile(catalogPath, catalogContent, 'catalog.json', 'node scripts/generate-library-catalog.mjs --write');
+  await checkIndexFiles(indexFiles);
+  if (process.exitCode !== 1) {
+    console.log('catalog.json and indexes are current.');
   }
 } else if (options.write) {
-  await writeFile(catalogPath, nextContent, 'utf8');
+  await writeFile(catalogPath, catalogContent, 'utf8');
+  await writeIndexFiles(indexFiles);
   console.log(`Wrote catalog.json with ${catalog.libraries.length} libraries.`);
+  console.log(`Wrote ${indexFiles.length} index files under indexes/.`);
 } else {
-  console.log(nextContent);
+  console.log(catalogContent);
 }
 
 function parseArgs(args) {
@@ -104,6 +101,210 @@ function toCatalogEntry(repositoryRoot, metadata) {
     hasImages: metadata.hasImages,
     hasAudio: metadata.hasAudio
   });
+}
+
+function buildIndexFiles(catalogLibraries) {
+  const files = [
+    ['indexes/search.json', buildSearchIndex(catalogLibraries)],
+    ...buildGroupedIndexes('indexes/by-language', groupByLanguages(catalogLibraries)),
+    ...buildGroupedIndexes('indexes/by-pair', groupByPairs(catalogLibraries)),
+    ...buildGroupedIndexes('indexes/by-tag', groupByArrayField(catalogLibraries, 'tags')),
+    ...buildGroupedIndexes('indexes/by-difficulty', groupByScalarField(catalogLibraries, 'difficulty'))
+  ];
+
+  return files
+    .map(([relativePath, payload]) => ({
+      relativePath,
+      absolutePath: path.join(repositoryRoot, relativePath),
+      content: toJsonContent(payload)
+    }))
+    .sort((left, right) => left.relativePath.localeCompare(right.relativePath));
+}
+
+function buildSearchIndex(catalogLibraries) {
+  return {
+    formatVersion: 1,
+    libraries: catalogLibraries.map(toIndexEntry)
+  };
+}
+
+function buildGroupedIndexes(rootPath, groups) {
+  return [...groups.entries()]
+    .sort(([left], [right]) => left.localeCompare(right))
+    .map(([key, entries]) => [
+      `${rootPath}/${slugifyIndexKey(key)}.json`,
+      {
+        formatVersion: 1,
+        key,
+        libraries: sortIndexEntries(entries)
+      }
+    ]);
+}
+
+function groupByLanguages(catalogLibraries) {
+  const groups = new Map();
+  for (const library of catalogLibraries) {
+    for (const language of [library.languagePair?.source, library.languagePair?.target]) {
+      addToGroup(groups, language, toIndexEntry(library));
+    }
+  }
+  return groups;
+}
+
+function groupByPairs(catalogLibraries) {
+  const groups = new Map();
+  for (const library of catalogLibraries) {
+    const source = library.languagePair?.source;
+    const target = library.languagePair?.target;
+    if (source && target) {
+      addToGroup(groups, `${source}-${target}`, toIndexEntry(library));
+      addToGroup(groups, `${target}-${source}`, toIndexEntry(library));
+    }
+  }
+  return groups;
+}
+
+function groupByArrayField(catalogLibraries, fieldName) {
+  const groups = new Map();
+  for (const library of catalogLibraries) {
+    for (const value of library[fieldName] ?? []) {
+      addToGroup(groups, String(value), toIndexEntry(library));
+    }
+  }
+  return groups;
+}
+
+function groupByScalarField(catalogLibraries, fieldName) {
+  const groups = new Map();
+  for (const library of catalogLibraries) {
+    const value = library[fieldName];
+    if (value) {
+      addToGroup(groups, String(value), toIndexEntry(library));
+    }
+  }
+  return groups;
+}
+
+function addToGroup(groups, key, entry) {
+  if (!key) return;
+  const group = groups.get(key) ?? [];
+  group.push(entry);
+  groups.set(key, sortIndexEntries(group));
+}
+
+function toIndexEntry(library) {
+  return stripUndefined({
+    id: library.id,
+    version: library.version,
+    title: library.title,
+    description: library.description,
+    languagePair: library.languagePair,
+    zipPath: library.zipPath,
+    sha256: library.sha256,
+    sizeBytes: library.sizeBytes,
+    author: library.author,
+    license: library.license,
+    difficulty: library.difficulty,
+    targetAges: library.targetAges,
+    questCount: library.questCount,
+    senseCount: library.senseCount,
+    challengeTypes: library.challengeTypes,
+    hasImages: library.hasImages,
+    hasAudio: library.hasAudio,
+    tags: library.tags,
+    minAppVersion: library.minAppVersion
+  });
+}
+
+function sortCatalogEntries(entries) {
+  return [...entries].sort((left, right) =>
+    left.id.localeCompare(right.id) || left.version.localeCompare(right.version)
+  );
+}
+
+function sortIndexEntries(entries) {
+  return [...entries].sort((left, right) =>
+    left.id.localeCompare(right.id) || left.version.localeCompare(right.version)
+  );
+}
+
+function slugifyIndexKey(key) {
+  return String(key)
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9._-]+/g, '-')
+    .replace(/^-+|-+$/g, '') || 'unknown';
+}
+
+async function writeIndexFiles(files) {
+  await rm(indexesRoot, { recursive: true, force: true });
+  for (const file of files) {
+    await mkdir(path.dirname(file.absolutePath), { recursive: true });
+    await writeFile(file.absolutePath, file.content, 'utf8');
+  }
+}
+
+async function checkIndexFiles(files) {
+  for (const file of files) {
+    await checkFile(file.absolutePath, file.content, file.relativePath, 'node scripts/generate-library-catalog.mjs --write');
+  }
+
+  const expectedPaths = new Set(files.map((file) => file.relativePath));
+  for (const existingPath of await listExistingIndexFiles(indexesRoot)) {
+    const relativePath = path.relative(repositoryRoot, existingPath).replaceAll(path.sep, '/');
+    if (!expectedPaths.has(relativePath)) {
+      console.error(`${relativePath} is stale.`);
+      console.error('Run:');
+      console.error('  node scripts/generate-library-catalog.mjs --write');
+      console.error('Then commit the updated indexes/.');
+      process.exitCode = 1;
+    }
+  }
+}
+
+async function checkFile(filePath, nextContent, displayPath, command) {
+  let currentContent = '';
+  try {
+    currentContent = await readFile(filePath, 'utf8');
+  } catch {
+    console.error(`${displayPath} is missing.`);
+    console.error('Run:');
+    console.error(`  ${command}`);
+    process.exitCode = 1;
+    return;
+  }
+
+  if (currentContent !== nextContent) {
+    console.error(`${displayPath} is stale.`);
+    console.error('Run:');
+    console.error(`  ${command}`);
+    process.exitCode = 1;
+  }
+}
+
+async function listExistingIndexFiles(rootPath) {
+  let entries;
+  try {
+    entries = await readdir(rootPath, { withFileTypes: true });
+  } catch {
+    return [];
+  }
+
+  const files = [];
+  for (const entry of entries) {
+    const entryPath = path.join(rootPath, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...await listExistingIndexFiles(entryPath));
+    } else if (entry.isFile() && entry.name.toLowerCase().endsWith('.json')) {
+      files.push(entryPath);
+    }
+  }
+  return files.sort((left, right) => left.localeCompare(right));
+}
+
+function toJsonContent(value) {
+  return `${JSON.stringify(value, null, 2)}\n`;
 }
 
 function stripUndefined(value) {

@@ -8,7 +8,7 @@ The app-facing entry point is:
 catalog.json
 ```
 
-Published libraries are ZIP packages under top-level `libraries/*.zip`. The app does not consume unpacked source folders directly, and published library sources are not kept in this repository.
+Published libraries are ZIP packages under top-level `libraries/*.zip`. The app does not consume unpacked source folders directly, and published library sources are not kept in this repository. Optional generated indexes under `indexes/` are derived from the same validated package metadata as `catalog.json`.
 
 ## Current commands
 
@@ -23,9 +23,9 @@ npm run library:check
 
 `library:validate` validates every top-level package ZIP.
 
-`library:catalog` regenerates deterministic `catalog.json` from the ZIP packages, including SHA-256 checksums and ZIP sizes.
+`library:catalog` regenerates deterministic `catalog.json` and optional `indexes/*.json` from the ZIP packages, including SHA-256 checksums and ZIP sizes.
 
-`library:catalog:check` fails when the committed catalog is stale.
+`library:catalog:check` fails when the committed catalog or generated indexes are stale.
 
 `npm test` creates temporary ZIP fixtures and checks valid packages, missing references, unsafe paths, executable files, oversized media, duplicate catalog entries, deterministic catalog generation, and stale catalog detection.
 
@@ -37,4 +37,5 @@ Library packages are data and media only. The validator rejects executable/code 
 
 - `libraries/cs-en-super-minds-2-starter-companion-1.0.0.zip`
 
-More libraries can be added by committing a valid ZIP to `libraries/`, running `npm run library:catalog`, and committing the updated `catalog.json`.
+More libraries can be added by committing a valid ZIP to `libraries/`, running `npm run library:catalog`, and committing the updated `catalog.json` plus generated `indexes/` files.
+
