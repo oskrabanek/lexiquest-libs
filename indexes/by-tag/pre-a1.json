@@ -3,7 +3,7 @@
   "key": "pre-a1",
   "libraries": [
     {
-      "id": "org.lexiquest.cs-en.super-minds-2-starter-companion",
+      "id": "org.lexiquest.cs-en.super-minds-second-edition-starter-companion",
       "version": "1.0.0",
       "title": {
         "en": "Super Minds Second Edition Starter – LexiQuest Companion",
@@ -17,9 +17,9 @@
         "source": "cs",
         "target": "en"
       },
-      "zipPath": "libraries/cs-en/super-minds-2-starter-companion/releases/1.0.0/library.zip",
-      "sha256": "f8e573d1962cbda16ee8fb032d7a510fbfe77b8187934495451b075430cfee35",
-      "sizeBytes": 5443817,
+      "zipPath": "libraries/cs-en/super-minds-second-edition-starter-companion/releases/1.0.0/library.zip",
+      "sha256": "53c7bbb997c4a58089c084bf7fc02c098776dee7c7265754c9043ba3665e078c",
+      "sizeBytes": 5445276,
       "author": "LexiQuest",
       "license": "CC-BY-4.0",
       "difficulty": "beginner",
