@@ -35,6 +35,7 @@ Library packages are data and media only. The validator rejects executable/code 
 
 ## Published packages
 
+- `libraries/cs-en/super-minds-second-edition-level-1/releases/1.0.0/library.zip` (10 Quests, 100 text vocabulary items; media planned)
 - `libraries/cs-en/super-minds-second-edition-starter-companion/releases/1.0.0/library.zip`
 - `libraries/cs-en/super-minds-second-edition-starter-template/releases/1.0.0/library.zip`
 
