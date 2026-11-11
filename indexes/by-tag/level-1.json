@@ -39,6 +39,44 @@
         "unofficial"
       ],
       "minAppVersion": "0.1.0"
+    },
+    {
+      "id": "org.lexiquest.cs-en.super-minds-second-edition-level-1",
+      "version": "1.1.0",
+      "title": {
+        "en": "Super Minds Second Edition Level 1",
+        "cs": "Super Minds Second Edition Level 1"
+      },
+      "description": {
+        "en": "Unofficial Czech-English vocabulary Adventure aligned to the Friends section and nine units of Super Minds Second Edition Level 1 Student’s Book. Illustrated edition; recordings will follow.",
+        "cs": "Neoficiální česko-anglická slovní výprava podle úvodní části Friends a devíti lekcí učebnice Super Minds Second Edition Level 1. Obsahuje ilustrace; nahrávky doplníme později."
+      },
+      "languagePair": {
+        "source": "cs",
+        "target": "en"
+      },
+      "zipPath": "libraries/cs-en/super-minds-second-edition-level-1/releases/1.1.0/library.zip",
+      "sha256": "e59d32283a4a2ec7d599d07d9624af2132f5a8f66cffa39e92b1e214ec18972f",
+      "sizeBytes": 1670625,
+      "author": "LexiQuest",
+      "license": "CC-BY-4.0",
+      "difficulty": "beginner",
+      "questCount": 10,
+      "senseCount": 100,
+      "challengeTypes": [],
+      "hasImages": true,
+      "hasAudio": false,
+      "tags": [
+        "children",
+        "beginner",
+        "czech",
+        "english",
+        "textbook-companion",
+        "super-minds",
+        "level-1",
+        "unofficial"
+      ],
+      "minAppVersion": "0.1.0"
     }
   ]
 }
