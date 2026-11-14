@@ -1,5 +1,6 @@
 import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { validateLibraryPackage } from './library-package-utils.mjs';
 
 const options = parseArgs(process.argv.slice(2));
@@ -21,6 +22,16 @@ for (const packagePath of packagePaths) {
     throw new Error(`Duplicate catalog library id/version: ${key}`);
   }
   seen.add(key);
+  if (metadata.cover) {
+    const coverPath = path.join(path.dirname(packagePath), metadata.cover);
+    const coverBytes = await readFile(coverPath).catch(() => {
+      throw new Error(`Missing catalog cover for ${key}: ${coverPath}`);
+    });
+    const coverSha256 = crypto.createHash('sha256').update(coverBytes).digest('hex');
+    if (coverSha256 !== metadata.coverSha256) {
+      throw new Error(`Catalog cover differs from package cover for ${key}: ${coverPath}`);
+    }
+  }
   libraries.push(toCatalogEntry(repositoryRoot, metadata));
 }
 
@@ -98,6 +109,9 @@ function toCatalogEntry(repositoryRoot, metadata) {
     languagePair: metadata.languagePair,
     packageFormatVersion: metadata.packageFormatVersion,
     zipPath: path.relative(repositoryRoot, metadata.zipPath).replaceAll(path.sep, '/'),
+    coverImage: metadata.cover
+      ? path.relative(repositoryRoot, path.join(path.dirname(metadata.zipPath), metadata.cover)).replaceAll(path.sep, '/')
+      : undefined,
     sha256: metadata.sha256,
     sizeBytes: metadata.sizeBytes,
     tags: metadata.tags,
@@ -211,6 +225,7 @@ function toIndexEntry(library) {
     description: library.description,
     languagePair: library.languagePair,
     zipPath: library.zipPath,
+    coverImage: library.coverImage,
     sha256: library.sha256,
     sizeBytes: library.sizeBytes,
     author: library.author,

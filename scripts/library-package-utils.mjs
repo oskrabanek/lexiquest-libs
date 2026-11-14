@@ -99,6 +99,12 @@ export async function validateLibraryPackage(zipPath) {
   validateManifest(manifest, manifestPath, errors);
   validateAdventure(manifest, adventure, adventurePath, errors);
   validateDictionaryAndQuestReferences(manifest, files, errors);
+  if (manifest.cover !== undefined) {
+    requireValue(typeof manifest.cover === 'string' && /^assets\/cover\.(png|jpe?g|webp)$/i.test(manifest.cover), 'manifest cover must reference an image under assets/.', errors);
+    if (typeof manifest.cover === 'string') {
+      requirePackagePath(files, manifest.cover, 'manifest cover', errors);
+    }
+  }
 
   if (errors.length > 0) {
     throwPackageError(zipPath, errors);
@@ -121,6 +127,10 @@ export async function validateLibraryPackage(zipPath) {
     minAppVersion: manifest.minimumAppVersion,
     sizeBytes: zipStat.size,
     sha256,
+    cover: manifest.cover,
+    coverSha256: manifest.cover && files.has(manifest.cover)
+      ? crypto.createHash('sha256').update(files.get(manifest.cover).data).digest('hex')
+      : undefined,
     fileCount: files.size,
     unpackedSizeBytes: unpackedSize,
     questCount: normalizeStringArray(manifest.lessons ?? manifest.quests).length,

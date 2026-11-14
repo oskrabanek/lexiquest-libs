@@ -14,10 +14,12 @@ try {
   await testValidZipPasses();
   await testMissingManifestFails();
   await testMissingAudioFails();
+  await testMissingCoverFails();
   await testPathTraversalFails();
   await testExecutableFileFails();
   await testOversizedImageFails();
   await testCatalogGenerationAndCheck();
+  await testCatalogCoverMatchesPackage();
   await testDuplicateLibraryFails();
   console.log('Library pipeline tests passed.');
 } finally {
@@ -48,6 +50,17 @@ async function testMissingAudioFails() {
     label: 'missing referenced audio fails',
     expectFailure: true,
     includes: 'audio/en/hello.mp3'
+  });
+}
+
+async function testMissingCoverFails() {
+  const entries = createValidEntries();
+  entries['manifest.yaml'] += 'cover: assets/cover.webp\n';
+  const zipPath = await writeFixtureZip('missing-cover.zip', entries);
+  runNode([validateScript, zipPath], {
+    label: 'missing referenced cover fails',
+    expectFailure: true,
+    includes: 'assets/cover.webp'
   });
 }
 
@@ -146,6 +159,31 @@ async function testDuplicateLibraryFails() {
     label: 'duplicate id/version fails',
     expectFailure: true,
     includes: 'Duplicate catalog library id/version'
+  });
+}
+
+async function testCatalogCoverMatchesPackage() {
+  const repo = await createTempRepository('catalog-cover');
+  const entries = createValidEntries();
+  entries['manifest.yaml'] += 'cover: assets/cover.webp\n';
+  entries['assets/cover.webp'] = Buffer.from([8, 7, 6, 5]);
+  const zipPath = await writeFixtureZip(path.join(repo, 'libraries/valid.zip'), entries);
+  const sidecar = path.join(path.dirname(zipPath), 'assets/cover.webp');
+  await mkdir(path.dirname(sidecar), { recursive: true });
+  await writeFile(sidecar, entries['assets/cover.webp']);
+
+  runNode([catalogScript, '--write'], { cwd: repo, label: 'catalog with cover succeeds' });
+  const catalog = JSON.parse(await readFile(path.join(repo, 'catalog.json'), 'utf8'));
+  assert(catalog.libraries[0].coverImage === 'libraries/assets/cover.webp', 'catalog exposes cover URL');
+  const searchIndex = JSON.parse(await readFile(path.join(repo, 'indexes/search.json'), 'utf8'));
+  assert(searchIndex.libraries[0].coverImage === 'libraries/assets/cover.webp', 'search index exposes cover URL');
+
+  await writeFile(sidecar, Buffer.from([1, 2, 3]));
+  runNode([catalogScript, '--check'], {
+    cwd: repo,
+    label: 'mismatched catalog cover fails',
+    expectFailure: true,
+    includes: 'Catalog cover differs from package cover'
   });
 }
 

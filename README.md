@@ -35,10 +35,11 @@ Library packages are data and media only. The validator rejects executable/code 
 
 ## Published packages
 
-- `libraries/cs-en/super-minds-second-edition-level-1/releases/1.1.0/library.zip` (10 Quests, 100 illustrated vocabulary items; audio planned)
+- `libraries/cs-en/super-minds-second-edition-level-1/releases/1.2.0/library.zip` (10 Quests, 100 illustrated vocabulary items and original cover; audio planned)
+- `libraries/cs-en/super-minds-second-edition-level-1/releases/1.1.0/library.zip` (previous illustrated release)
 - `libraries/cs-en/super-minds-second-edition-level-1/releases/1.0.0/library.zip` (previous text-only release)
-- `libraries/cs-en/super-minds-second-edition-starter-companion/releases/1.0.0/library.zip`
-- `libraries/cs-en/super-minds-second-edition-starter-template/releases/1.0.0/library.zip`
+- `libraries/cs-en/super-minds-second-edition-starter-companion/releases/1.1.0/library.zip` (original cover included)
+- `libraries/cs-en/super-minds-second-edition-starter-companion/releases/1.0.0/library.zip` (previous release)
 
 More libraries can be added by committing a valid release ZIP at `libraries/<language-pair>/<library-slug>/releases/<version>/library.zip`, running `npm run library:catalog`, and committing the updated `catalog.json` plus generated `indexes/` files.
 
