@@ -3,7 +3,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
-import { LIMITS } from './library-package-utils.mjs';
+import { LIMITS, validateLibraryPackage } from './library-package-utils.mjs';
 
 const repositoryRoot = path.resolve(fileURLToPath(new URL('../', import.meta.url)));
 const validateScript = path.join(repositoryRoot, 'scripts/validate-library-package.mjs');
@@ -40,6 +40,8 @@ async function testVocabularyCategory() {
   assert(entries[dictionary] !== original, 'fixture contains a vocabulary sense');
   const valid = await writeFixtureZip('category.zip', entries);
   runNode([validateScript, valid], { label: 'optional vocabulary category is valid' });
+  const metadata = await validateLibraryPackage(valid);
+  assert(metadata.hasVocabularyCategories, 'package metadata advertises vocabulary categories');
   entries[dictionary] = entries[dictionary].replace('categoryId: greetings', 'categoryId: 42');
   const invalid = await writeFixtureZip('bad-category.zip', entries);
   runNode([validateScript, invalid], { label: 'invalid category fails', expectFailure: true, includes: 'categoryId' });

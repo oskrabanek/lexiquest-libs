@@ -147,6 +147,7 @@
       ],
       "hasImages": true,
       "hasAudio": true,
+      "hasVocabularyCategories": true,
       "tags": [
         "children",
         "beginner",

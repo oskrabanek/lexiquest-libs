@@ -124,7 +124,8 @@ function toCatalogEntry(repositoryRoot, metadata) {
     senseCount: metadata.senseCount,
     challengeTypes: metadata.challengeTypes,
     hasImages: metadata.hasImages,
-    hasAudio: metadata.hasAudio
+    hasAudio: metadata.hasAudio,
+    hasVocabularyCategories: metadata.hasVocabularyCategories || undefined
   });
 }
 
@@ -237,6 +238,7 @@ function toIndexEntry(library) {
     challengeTypes: library.challengeTypes,
     hasImages: library.hasImages,
     hasAudio: library.hasAudio,
+    hasVocabularyCategories: library.hasVocabularyCategories,
     tags: library.tags,
     minAppVersion: library.minAppVersion
   });

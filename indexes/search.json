@@ -182,6 +182,7 @@
       "challengeTypes": [],
       "hasImages": true,
       "hasAudio": false,
+      "hasVocabularyCategories": true,
       "tags": [
         "children",
         "beginner",
@@ -339,6 +340,7 @@
       ],
       "hasImages": true,
       "hasAudio": true,
+      "hasVocabularyCategories": true,
       "tags": [
         "children",
         "beginner",

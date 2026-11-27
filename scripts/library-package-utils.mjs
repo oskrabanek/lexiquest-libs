@@ -137,7 +137,8 @@ export async function validateLibraryPackage(zipPath) {
     senseCount: countSenses(manifest, files),
     challengeTypes: collectChallengeTypes(manifest, files),
     hasImages: hasReferencedImages(manifest, files),
-    hasAudio: hasReferencedAudio(manifest, files)
+    hasAudio: hasReferencedAudio(manifest, files),
+    hasVocabularyCategories: hasVocabularyCategories(manifest, files)
   };
 }
 
@@ -365,6 +366,13 @@ function collectChallengeTypes(manifest, files) {
     }
   }
   return [...types].sort();
+}
+
+function hasVocabularyCategories(manifest, files) {
+  return normalizeStringArray(manifest.dictionary).some((dictionaryPath) => {
+    const dictionary = parseDataFile(dictionaryPath, files.get(dictionaryPath).data);
+    return normalizeArray(dictionary.senses ?? dictionary.items).some((sense) => Boolean(sense.categoryId));
+  });
 }
 
 function hasReferencedImages(manifest, files) {
