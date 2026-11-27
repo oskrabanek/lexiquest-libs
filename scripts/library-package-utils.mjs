@@ -252,6 +252,14 @@ function validateDictionaryAndQuestReferences(manifest, files, errors) {
         senseIds.add(sense.id);
       }
 
+      const categoryId = sense?.categoryId;
+      if (categoryId !== undefined) {
+        requireValue(typeof categoryId === 'string' &&
+          categoryId.length > 0 && categoryId.length <= 80 &&
+          categoryId === categoryId.normalize('NFKC').trim().replace(/\s+/g, ' ') &&
+          !/[\p{Cc}\p{Cf}]/u.test(categoryId), `${sense?.id} has an invalid categoryId.`, errors);
+      }
+
       for (const imageRef of normalizeArray(sense?.picture ?? sense?.image ?? sense?.imageRefs)) {
         requirePackagePath(files, imageRef, `${sense?.id ?? dictionaryPath} image`, errors);
       }

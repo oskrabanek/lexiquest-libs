@@ -12,6 +12,7 @@ const tempRoot = await mkdtemp(path.join(os.tmpdir(), 'lexiquest-libs-test-'));
 
 try {
   await testValidZipPasses();
+  await testVocabularyCategory();
   await testMissingManifestFails();
   await testMissingAudioFails();
   await testMissingCoverFails();
@@ -29,6 +30,19 @@ try {
 async function testValidZipPasses() {
   const zipPath = await writeFixtureZip('valid.zip');
   runNode([validateScript, zipPath], { label: 'valid ZIP passes' });
+}
+
+async function testVocabularyCategory() {
+  const entries = createValidEntries();
+  const dictionary = Object.keys(entries).find((entry) => entry.startsWith('dictionary/'));
+  const original = entries[dictionary];
+  entries[dictionary] = original.replace(/^(\s*- id: .*?)$/m, '$1\n    categoryId: greetings');
+  assert(entries[dictionary] !== original, 'fixture contains a vocabulary sense');
+  const valid = await writeFixtureZip('category.zip', entries);
+  runNode([validateScript, valid], { label: 'optional vocabulary category is valid' });
+  entries[dictionary] = entries[dictionary].replace('categoryId: greetings', 'categoryId: 42');
+  const invalid = await writeFixtureZip('bad-category.zip', entries);
+  runNode([validateScript, invalid], { label: 'invalid category fails', expectFailure: true, includes: 'categoryId' });
 }
 
 async function testMissingManifestFails() {
